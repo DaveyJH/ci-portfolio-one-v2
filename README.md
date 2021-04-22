@@ -32,6 +32,9 @@ I hope to present a clean and professional, easy to navigate platform which will
 - *"I have a project I wish to collaborate on, I want to find someone who has the right attitude and skills to complete my objectives.  The way they present themselves will impact heavily on my decision, I will spend a lot of time investigating the various aspects of the application."*
 - *"I have met Dave, I am interested in what he does.  He suggested I take a look at this site.  Depending on my interaction, I may advise others to take a look.  Any one of us may have a professional interest and so this experience could open doors to future prospects."*
 ### Initial Concept
+
+My initial design is based around a Rubik's cube. I hope to display a logical, structured design which encourages the user to investigate further. The experience should be enjoyable and have enough interaction/animation to demonstrate competency
+
 [Scratch Pads](assets/files/dnf.html)<br>
 [Wireframes](assets/files/dnf.html)
 
@@ -57,7 +60,7 @@ For some/all of your features, you may choose to reference the specific project 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
-- Another feature idea
+- Rubik's cube menu structure on home page.
 
 ## Technologies Used
 
