@@ -98,8 +98,17 @@ In particular, you should provide all details of the differences between the dep
 
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
+## Inspiration
+
+I did some research far too late into the project on my initial attempt. It resulted in an application which didn't seem to fit the original specification well enough. It was a result of poor planning and too little research.<br>
+I found a few websites which have elements that I really like and so, some of my styling ideas are likely based on concepts found below:
+- [Matthew Williams](https://findmatthew.com)
+- [Josue Espinosa](https://ejosue.com/)
+- [Rafael Caferati](https://caferati.me/portfolio)
 
 ## Credits
+
+*First credits must be given to the developers responsible for the content above.  Their websites gave some real insight into how I could develop my own creative ideas. After viewing their sites, I took myself back in the development/design stage to get a better initial concept of how I wanted my final product to look*
 
 ### Content
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
