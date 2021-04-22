@@ -1,11 +1,39 @@
-# Your Project's Name
+# Dave J Horrocks - A Personal Profile
 
-One or two paragraphs providing an overview of your project.
+In this project I intend to provide a professional style website to advertise myself to prospective employers.  The structure should allow users to access key sections at all times, with easy navigation to more information if desired.
 
-Essentially, this part is your sales pitch.
- 
+The surface design should draw attention to calls to action, be of a professional presentation, and demonstrate a level of competency working with HTML and CSS code.
+
+<!-- location for ease of use when working. relocate at the end of the project -->
+## Bug List
+
+## To-do List
+
+## Comments From Users
+
+#
+## A Personal Profile For Prospective Employers
+
+I hope to present a clean and professional, easy to navigate platform which will:
+- Give a brief introduction to me
+- Convey key information about me and my professional skills
+- Provide an easily-accessible link to my CV in PDF format
+- Display a few basic projects that I have worked
+- Provide links to social-networking/github profiles (possibly e-mail/phone in the future)
+- Portray an emotively inspiring application which gives insight into my abilities
+
+**The main objective of the application is to portray myself in a professional manner and enable potential employers easy access to my credentials.**
+#
 ## UX
- 
+
+- *"As a professional recruiter, I wish to access a professional CV with as little interaction as possible.  I have very little time and so clear and quick access is essential."*
+- *"As a potential employer, I wish to learn a little about my prospective employee. I am happy to spend a little time investigating but hope the information is well presented and easy to navigate."*
+- *"I have a project I wish to collaborate on, I want to find someone who has the right attitude and skills to complete my objectives.  The way they present themselves will impact heavily on my decision, I will spend a lot of time investigating the various aspects of the application."*
+- *"I have met Dave, I am interested in what he does.  He suggested I take a look at this site.  Depending on my interaction, I may advise others to take a look.  Any one of us may have a professional interest and so this experience could open doors to future prospects."*
+
+[Scratch Pads](assets/files/dnf.html)<br>
+[Wireframes](assets/files/dnf.html)
+
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
