@@ -1,36 +1,52 @@
 # Dave J Horrocks - A Personal Profile
 
-In this project I intend to provide a professional style website to advertise myself to prospective employers and collaborators .  The structure should allow users to access key sections at all times, with easy navigation to more information if desired.
+## Table of Contents
+- [Objective](#Objective)
+- [Developer Section](#Developer-Section)
+    - [Bug List](#Bug-List)
+    - [To Do List](#To-Do-List)
+    - [Comments From Users](#Comments-From-Users)
+- [Brief](#A-Personal-Profile-For-Prospective-Employers)
+- [UX &#8722; User Experience Design](#UX-&#8722;-User-Experience-Design)
+    - [User Requirements](#User-Requirements)
+    - [Initial Concept](#Initial-Concept)
+
+## Objective
+In this project I intend to provide a professional style website to advertise myself to prospective employers and collaborators.  The structure should allow users to access key sections at all times, with easy navigation to more information if desired.
 
 The surface design should draw attention to calls to action, be of a professional presentation, and demonstrate a level of competency working with HTML and CSS code.
 
 <!-- location for ease of use when working. relocate at the end of the project -->
 ## Bug List
 
-## To-do List
+## To Do List
 - **Create clear wireframe mockups**
 
 ## Comments From Users
 
 #
 ## A Personal Profile For Prospective Employers
-
+<!-- link to live page here? -->
+<!-- finished project photos here? -->
 I hope to present a clean and professional, easy to navigate platform which will:
 - Give a brief introduction to me
 - Convey key information about me and my professional skills
 - Provide an easily-accessible link to my CV in PDF format
-- Display a few basic projects that I have worked
+- Display a few basic projects that I have worked (with a view to maintain for future additions)
 - Provide links to social-networking/github profiles (possibly e-mail/phone in the future)
 - Portray an emotively inspiring application which gives insight into my abilities
+- Achieve criteria for the Code Institute Portfolio Project 1 - HTML/CSS Essentials
 
 **The main objective of the application is to portray myself in a professional manner and enable potential employers easy access to my credentials.**
 #
-## UX
+## UX &#8722; User Experience Design
 ### User Requirements
-- *"As a professional recruiter, I wish to access a professional CV with as little interaction as possible.  I have very little time and so clear and quick access is essential."*
-- *"As a potential employer, I wish to learn a little about my prospective employee. I am happy to spend a little time investigating but hope the information is well presented and easy to navigate."*
-- *"I have a project I wish to collaborate on, I want to find someone who has the right attitude and skills to complete my objectives.  The way they present themselves will impact heavily on my decision, I will spend a lot of time investigating the various aspects of the application."*
-- *"I have met Dave, I am interested in what he does.  He suggested I take a look at this site.  Depending on my interaction, I may advise others to take a look.  Any one of us may have a professional interest and so this experience could open doors to future prospects."*
+- *"As a professional recruiter, I wish to access a professional CV with as little interaction as possible.  I have very little time and so clear and quick access is essential"*
+- *"As a potential employer, I wish to learn a little about my prospective employee. I am happy to spend a little time investigating but hope the information is well presented and easy to navigate"*
+- *"As a devloper, I have a project I wish to collaborate on. I want to find someone who has the right attitude and skills to complete my objectives.  The way they present themselves will impact heavily on my decision, I will spend a lot of time investigating various aspects of the application. If I like what I find, I want to be able to contact Dave directly via the site. I may return in the future in the hope of seeing updated content"*
+- *"As a general business person, I have met Dave, I am interested in what he does.  He suggested I take a look at this site.  Depending on my interaction, I may advise others to take a look.  Any one of us may have a professional interest and so this experience could open doors to future prospects.  I have no real objective, but my experience must be pleasant"*
+- *"As a first time visitor and general user, I want to know what this site is about and easily navigate through increasing levels of information"*
+
 ### Initial Concept
 
 My initial design is based around a Rubik's cube. I hope to display a logical, structured design which encourages the user to investigate further. The experience should be enjoyable and have enough interaction/animation to demonstrate competency
