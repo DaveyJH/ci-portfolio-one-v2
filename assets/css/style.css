@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Orbitron&family=Turret+Road&family=Zen+Dots&display=swap');
+
 /* font-size setting means rem*10=px */
 html {
     font-size: 62.5%;
@@ -5,4 +7,11 @@ html {
     body {
     color: grey;
     font-size: 1.6rem;
+}
+header {
+    /* 
+    monospace is the wrong font-family fall-back but is more in-keeping with the style intended
+    ! need to research to see if this is an issue
+     */
+    font-family: "Zen Dots", monospace;
 }
