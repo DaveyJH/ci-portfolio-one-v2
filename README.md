@@ -51,8 +51,9 @@ I hope to present a clean and professional, easy to navigate platform which will
 
 My initial design is based around a Rubik's cube. I hope to display a logical, structured design which encourages the user to investigate further. The experience should be enjoyable and have enough interaction/animation to demonstrate competency
 
-[Scratch Pads](assets/files/scratch/scratchpads.md)<br>
-[Wireframes](assets/files/scratch/rubiks-mob-design.pdf)
+[Scratch Pads](assets/files/scratch/scratchpads.md#Mobile-Design)
+
+[Wireframes](assets/files/scratch/wireframes.md#Mobile-Design)
 
 
 <!--
