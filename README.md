@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Objective](#Objective)
-- [Developer Section](#Developer-Section)
+- Developer Section
     - [Bug List](#Bug-List)
     - [To Do List](#To-Do-List)
     - [Comments From Users](#Comments-From-Users)
@@ -10,6 +10,18 @@
 - [UX &#8722; User Experience Design](#UX-&#8722;-User-Experience-Design)
     - [User Requirements](#User-Requirements)
     - [Initial Concept](#Initial-Concept)
+        - [Scratch Pads](#Scratch-Pads)
+        - [Wireframes](#Wireframes)
+- [Features](#Features)
+    - [Exisiting Features](#Exisiting-Features)
+    - [Features Left to Implement](#Features-Left-to-Implement)
+- [Technologies Used](#Technologies-Used)
+- [Testing](#Testing)
+- [Deployment](#Deployment)
+- [Inspiration](#Inspiration)
+- [Downloads](#Downloads)
+
+
 
 ## Objective
 In this project I intend to provide a professional style website to advertise myself to prospective employers and collaborators.  The structure should allow users to access key sections at all times, with easy navigation to more information if desired.
@@ -20,7 +32,8 @@ The surface design should draw attention to calls to action, be of a professiona
 ## Bug List
 
 ## To Do List
-- **Create clear wireframe mockups**
+- **Create basic HTML structure**
+- *Extend title to full name on desktop?*
 
 ## Comments From Users
 
@@ -29,6 +42,7 @@ The surface design should draw attention to calls to action, be of a professiona
 <!-- link to live page here? -->
 <!-- finished project photos here? -->
 I hope to present a clean and professional, easy to navigate platform which will:
+
 - Give a brief introduction to me
 - Convey key information about me and my professional skills
 - Provide an easily-accessible link to my CV in PDF format
@@ -38,6 +52,7 @@ I hope to present a clean and professional, easy to navigate platform which will
 - Achieve criteria for the Code Institute Portfolio Project 1 - HTML/CSS Essentials
 
 **The main objective of the application is to portray myself in a professional manner and enable potential employers easy access to my credentials.**
+
 #
 ## UX &#8722; User Experience Design
 ### User Requirements
@@ -48,48 +63,52 @@ I hope to present a clean and professional, easy to navigate platform which will
 - *"As a first time visitor and general user, I want to know what this site is about and easily navigate through increasing levels of information"*
 
 ### Initial Concept
-
 My initial design is based around a Rubik's cube. I hope to display a logical, structured design which encourages the user to investigate further. The experience should be enjoyable and have enough interaction/animation to demonstrate competency
 
 [Scratch Pads](assets/files/scratch/scratchpads.md#Mobile-Design)
 
 [Wireframes](assets/files/scratch/wireframes.md#Mobile-Design)
 
-
-<!--
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
--->
 #
 ## Features
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
+<!-- In this section, you should go over the different parts of your project, and describe each in a sentence or so. -->
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
+<!-- - Feature 1 - allows users X to achieve Y, by having them fill out Z -->
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+1. The home page design incorporates an eye catching hero image. The text is brief and informative
+>*"As a first time visitor ... **I want to know what this site is about**"*
+- the text is brief and informative
+>*"As a general business person ... **Depending on my interaction, I may advise others to take a look.**"*
+- an eye catching hero image: *the image is chosen as an emotive icon related to play, puzzles and logic*
+#
+2. The home page has a clear arrow to show scroll is possible
+>Multiple users - ***"...well presented and easy to navigate"***
+- The arrow shows the page has more content below *(see future ideas below)*
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+<!-- For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
+In addition, you may also use this section to discuss plans for additional features to be implemented in the future: -->
+#
 ### Features Left to Implement
-- Rubik's cube menu structure on home page.
+*A few ideas of how I would like to further develop the site as I learn and further my skills*
 
+- Rubik's cube menu structure on home page. *Individual blocks animate at start to build the cube. On links/scrolling, have the cube spin and transform pattern/complete?*
+    - Future development: have interactive Rubik's cube??
+
+- Dark mode toggle. *Create an icon near the top corner? to toggle dark/light modes*
+    - Light bulb with glow/lampshade effect for distinguishing toggle
+
+- Down arrow is also clickable link to automatically bring next 'page' to the top
+
+#
 ## Technologies Used
-
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
 
-
+#
 ## Testing
-
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
 Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
@@ -108,8 +127,8 @@ You should also mention in this section any interesting bugs or problems you dis
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
+#
 ## Deployment
-
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
 In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
@@ -119,16 +138,16 @@ In particular, you should provide all details of the differences between the dep
 
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
+#
 ## Inspiration
+I did some research far too late into the project on my initial attempt. It resulted in an application which didn't seem to fit the original specification well enough. It was a result of poor planning and too little research.
 
-I did some research far too late into the project on my initial attempt. It resulted in an application which didn't seem to fit the original specification well enough. It was a result of poor planning and too little research.<br>
 I found a few websites which have elements that I really like and so, some of my styling ideas are likely based on concepts found below:
 - [Matthew Williams](https://findmatthew.com)
 - [Josue Espinosa](https://ejosue.com/)
 - [Rafael Caferati](https://caferati.me/portfolio)
 
 ## Credits
-
 *First credits must be given to the developers responsible for the content above.  Their websites gave some real insight into how I could develop my own creative ideas. After viewing their sites, I took myself back in the development/design stage to get a better initial concept of how I wanted my final product to look*
 
 ### Content
@@ -138,5 +157,7 @@ I found a few websites which have elements that I really like and so, some of my
 - The photos used in this site were obtained from ...
 
 ### Acknowledgements
-
 - I received inspiration for this project from X
+
+### Downloads
+[Downloadable Files](/assets/files/downloads/downloads.md#Downloadable-Files)
