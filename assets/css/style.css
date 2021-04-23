@@ -1,17 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Monofett&family=Orbitron&family=Turret+Road&family=Zen+Dots&display=swap');
+/* 
+! colors
+#EFF0F1
+#BBE6E4
+#42BFDD
+#5100B5
+#2E0066
+#13D705
+#394F49
+*/
 
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
 /* font-size setting means rem*10=px */
 html {
     font-size: 62.5%;
 }    
-    body {
-    color: grey;
+body {
     font-size: 1.6rem;
+    font-family: "Orbitron", sans-serif;
 }
+
+/* header */
 header {
     /* 
-    monospace is the wrong font-family fall-back but is more in-keeping with the style intended
+    * monospace is the wrong font-family fall-back but is more in-keeping with the style intended
     ! need to research to see if this is an issue
      */
     font-family: "Zen Dots", monospace;
+    color: #5100B5;
 }
+h1 {
+    color: #13D705;
+    letter-spacing: 0.2rem;
+    margin-top: 6rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+/* hologram effect text on homepage */
+#hologram-text {
+    color: #5100B5;
+    width: 100%;
+    padding: 0 2.5rem;
+    box-sizing: border-box;
+}
+h2 {
+    color: #2e0066;
+    text-align: center;
+}
+#hologram-text>div:nth-child(3) {
+    text-align: right;
+}
+
