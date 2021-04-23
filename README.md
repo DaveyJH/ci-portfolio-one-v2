@@ -34,7 +34,11 @@ The surface design should draw attention to calls to action, be of a professiona
 ## To Do List
 - Investigate semantics of a header within a section. Does the header still apply to the whole page?
 - Check there is no issue with using a different back-up font family
-- **Create basic HTML structure**
+- **Create basic HTML/CSS structure**
+    - icons for cube-links
+    - create line image
+    - scroll section
+    - *desktop checks and changes*
 - *Extend title to full name on desktop?*
 - *Add footer section to link to contact section? right hand side of nav bar?*
 
