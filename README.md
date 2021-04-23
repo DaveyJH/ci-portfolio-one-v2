@@ -34,6 +34,7 @@ The surface design should draw attention to calls to action, be of a professiona
 ## To Do List
 - **Create basic HTML structure**
 - *Extend title to full name on desktop?*
+- *Add footer section to link to contact section? right hand side of nav bar?*
 
 ## Comments From Users
 
