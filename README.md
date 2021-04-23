@@ -32,6 +32,8 @@ The surface design should draw attention to calls to action, be of a professiona
 ## Bug List
 
 ## To Do List
+- Investigate semantics of a header within a section. Does the header still apply to the whole page?
+- Check there is no issue with using a different back-up font family
 - **Create basic HTML structure**
 - *Extend title to full name on desktop?*
 - *Add footer section to link to contact section? right hand side of nav bar?*
