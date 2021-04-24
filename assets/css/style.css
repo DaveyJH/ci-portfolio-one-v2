@@ -37,7 +37,6 @@ a {
 #home-page {
     background-color: #fff200c0;
 }
-
 /* header */
 header {
     /* 
@@ -60,11 +59,21 @@ h1 {
     visibility: hidden;
 }
 
+/* rubiks image*/
+#rubiks-home {
+    margin: 0 auto;
+    /* width: min(100%, 400px); */
+    width: 40rem;
+    height: 40rem;
+    background: url(../images/rubiks-color-1.png) no-repeat center;
+    background-size: 67.5%;
+    position: relative;
+}
 /* hologram effect text on homepage */
 #hologram-text {
     color: #5100B5;
     width: 100%;
-    padding: 0 2.5rem;
+    padding: 0 3rem;
     box-sizing: border-box;
     margin-bottom: 1.2rem;
 }
@@ -80,19 +89,8 @@ h2 {
     letter-spacing: 0.03rem;
     margin-top: 1rem;
 }
-#hologram-text>div:nth-child(3) {
+#hologram-text p:nth-child(2) {
     text-align: right;
-}
-
-/* rubiks image*/
-#rubiks-home {
-    margin: 0 auto;
-    /* width: min(100%, 400px); */
-    width: 40rem;
-    height: 40rem;
-    background: url(../images/rubiks-color-1.png) no-repeat center;
-    background-size: 27rem;
-    position: relative;
 }
 /* holo effect */
 #shimmer {
