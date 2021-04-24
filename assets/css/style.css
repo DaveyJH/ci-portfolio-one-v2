@@ -30,6 +30,10 @@ body {
     font-size: 1.6rem;
     font-family: "Orbitron", sans-serif;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 #home-page {
     background-color: #fff200c0;
 }
@@ -138,6 +142,7 @@ h2 {
     background-color: #394F49;
     text-align: center;
     line-height: 2.2rem;
+    z-index: 2;
 }
 /* download cv */
 #link-cv {
