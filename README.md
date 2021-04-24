@@ -30,13 +30,13 @@ The surface design should draw attention to calls to action, be of a professiona
 
 <!-- location for ease of use when working. relocate at the end of the project -->
 ## Bug List
-- WHEN HOVERING ALONG THE SAME HORIZONTAL AS THE PDF ICON AND WITHIN THE WIDTH OF THE RUBIKS IMAGE, THE TAG-LINE TEXT IS CHANGING. THIS GIVES A BAD UX AND NEEDS RECTIFYING
+<!-- - WHEN HOVERING ALONG THE SAME HORIZONTAL AS THE PDF ICON AND WITHIN THE WIDTH OF THE RUBIKS IMAGE, THE TAG-LINE TEXT IS CHANGING. THIS GIVES A BAD UX AND NEEDS RECTIFYING -->
 ## To Do List
 - Investigate semantics of a header within a section. Does the header still apply to the whole page?
 - Check there is no issue with using a different back-up font family
 - **Create basic HTML/CSS structure**
-    - re-organise so width of div containing cube icon doesnt activate color change
     - *other (hidden from mobile)* icons for cube-links
+    - nav element?
     - create *other (hidden from mobile)* line images
     - scroll section
         - icon

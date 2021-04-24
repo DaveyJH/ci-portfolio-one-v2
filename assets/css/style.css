@@ -124,11 +124,11 @@ h2 {
     text-shadow: #42BFDD 1px 1px 3px, -1px -1px 3px;
 }
 .icon-holder {
-    width: 3rem;
+    width: 2.5rem;
     height: 3rem;
 }
-#rubiks-home .icon-holder:hover~i {
-    text-shadow: #5100B5 0px 0px 3px, -0px -0px 3px;
+#rubiks-home .icon-holder:hover i {
+    text-shadow: #5100B5 0px 0px 3px;
 }
 #rubiks-home .download-cv:hover~.cube-link {
     font-weight: 600;
@@ -139,7 +139,7 @@ h2 {
 #rubiks-home .download-cv:hover~.cube-link span {
     font-weight: 900;
 }
-#rubiks-home .icon-holder:active~i {
+#rubiks-home .icon-holder:active i {
     text-shadow: #13D705 1px 1px 3px, -1px -1px 3px;
 }
 #rubiks-home .download-cv:active~.cube-link {
@@ -176,8 +176,8 @@ h2 {
 }
 .download-cv .icon-holder {
     position: absolute;
-    left: 16.5rem;
-    bottom: -0.5rem;
+    left: 16.8rem;
+    bottom: -2.9rem;
 }
 .icon.download-cv {
     text-align: center;
@@ -191,6 +191,7 @@ h2 {
     height: 4.3rem;
     width: 16.8rem;
     position: absolute;
+    top: 2.3rem;
     right: 5rem;
 
 }
