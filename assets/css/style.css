@@ -130,11 +130,19 @@ h2 {
 #rubiks-home .icon-holder:hover~i {
     text-shadow: #5100B5 0px 0px 3px, -0px -0px 3px;
 }
-#rubiks-home .download-cv:hover~div {
+#rubiks-home .download-cv:hover~.cube-link {
+    font-weight: 600;
+    color: #5100B5;
     text-shadow: #000000 0.2rem 0.2rem;
+    background-color: #394f49C0;
 }
 #rubiks-home .icon-holder:active~i {
     text-shadow: #13D705 1px 1px 3px, -1px -1px 3px;
+}
+#rubiks-home .download-cv:active~.cube-link {
+    font-weight: 600;
+    color: #13D705;
+    text-shadow: #000000 0.2rem 0.2rem;
 }
 .cube-link {
     height: 2.2rem;

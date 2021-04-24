@@ -30,15 +30,17 @@ The surface design should draw attention to calls to action, be of a professiona
 
 <!-- location for ease of use when working. relocate at the end of the project -->
 ## Bug List
-
+- WHEN HOVERING ALONG THE SAME HORIZONTAL AS THE PDF ICON AND WITHIN THE WIDTH OF THE RUBIKS IMAGE, THE TAG-LINE TEXT IS CHANGING. THIS GIVES A BAD UX AND NEEDS RECTIFYING
 ## To Do List
 - Investigate semantics of a header within a section. Does the header still apply to the whole page?
 - Check there is no issue with using a different back-up font family
 - **Create basic HTML/CSS structure**
-    - icons for cube-links
-    - create line image
+    - re-organise so width of div containing cube icon doesnt activate color change
+    - *other (hidden from mobile)* icons for cube-links
+    - create *other (hidden from mobile)* line images
     - scroll section
-    - *desktop checks and changes*
+        - icon
+    - ***desktop checks and changes***
 - *Extend title to full name on desktop?*
 - *Add footer section to link to contact section? right hand side of nav bar?*
 
@@ -100,12 +102,14 @@ In addition, you may also use this section to discuss plans for additional featu
 *A few ideas of how I would like to further develop the site as I learn and further my skills*
 
 - Rubik's cube menu structure on home page. *Individual blocks animate at start to build the cube. On links/scrolling, have the cube spin and transform pattern/complete?*
-    - Future development: have interactive Rubik's cube??
+    - Future development: have interactive Rubik's cube game??
 
 - Dark mode toggle. *Create an icon near the top corner? to toggle dark/light modes*
     - Light bulb with glow/lampshade effect for distinguishing toggle
 
 - Down arrow is also clickable link to automatically bring next 'page' to the top
+
+- Animate link-lines with a color change effect, continuing to the text.
 
 #
 ## Technologies Used
