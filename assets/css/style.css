@@ -96,11 +96,13 @@ h2 {
 }
 /* holo effect */
 #shimmer {
-    background-color: #13D70572;
-    width: 19rem;
+    background: url(../images/holo-thin.png) no-repeat center center;
+    background-size: 100% 12rem;
+    width: 0rem;
     height: 12rem;
     margin: 0 auto;
-    /* background-image: ; */
+    animation: holo-shimmer 0.6s 1.4s forwards;
+    
 }
 #holo-port {
     background-color: #394F49DD;
@@ -125,9 +127,36 @@ h2 {
         background-color: #394F49DD;
         border: 1px #333333EE solid;
     }
-    to {
+        to {
         background-color: #111111EE;
         border: none;
+    }
+}
+@keyframes holo-shimmer {
+    from {
+        width: 0rem;
+    }
+    25% {
+        background: none;
+    }
+    32%{
+        background: url(../images/holo-thin.png) no-repeat center center;
+    }
+    46% {
+        background: none;
+    }
+    58%{
+        background: url(../images/holo-thin.png) no-repeat center center;
+    }
+    74% {
+        background: none;
+    }
+    81%{
+        background: url(../images/holo-thick.png) no-repeat center center;
+    }
+    to {
+        width: 30rem;
+        background: url(../images/holo-thin.png) no-repeat center center;
     }
 }
 /* link effect */
