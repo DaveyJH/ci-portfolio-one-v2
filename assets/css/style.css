@@ -112,7 +112,7 @@ h2 {
     
 }
 #holo-port {
-    background-color: #394F49DD;
+    background-color: #394F4999;
     margin: -0.7rem auto 0;
     width: 4.2rem;
     height: 2.2rem;
@@ -295,6 +295,14 @@ h2 {
 #scroll-container i {
     font-size: 3rem;
     color: #2E0066;
+}
+
+@media screen and (min-width: 800px) {
+    #hologram-text {
+        width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
