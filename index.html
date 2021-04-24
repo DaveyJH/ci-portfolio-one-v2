@@ -13,53 +13,61 @@
     <!-- 
         TODO I think I will need to add a section containing the home 'page' and set a height. can header be contained in section? could leave header above section and have title disappear? again, check semantics of visibility:hidden items
      -->
-    <header>
-        <a href="index.html">
-            <h1>DaveyJH</h1>
-        </a>
-        <!-- 
-            ? hidden nav bar
-        -->
-    </header>
-    <section id="hologram-text">
-        <div>
-            <h2>
-                Full Stack Software Developer
-            </h2>
-        </div>
-        <div>
-            <p>
-                Professional problem solving...
-            </p>
-        </div>
-        <div>
-            <p>
-                ...Personal approach
-            </p>
-        </div>
-        <!-- 
-            ? hologram
-         -->
-    </section>
-    <section>
-        <div id="rubiks-home">
-            <div id="hologram-effect">
-                <div id="shimmer"></div>
-                <div id="holo-port"></div>
+     <section id="home-page">
+        <header>
+            <nav id="nav-bar">
+                <!-- 
+                !    return to complete nav section - not need on home page?? 
+                -->
+                nav content
+            </nav>
+            <a href="index.html">
+                <h1>DaveyJH</h1>
+            </a>
+        </header>
+        <section id="hologram-text">
+            <div>
+                <h2>
+                    Full Stack Software Developer
+                </h2>
             </div>
-            <div id="icon-cv">
-                <div class="download-cv icon">icon</div>
-                <div class="download-cv cube-link">Download CV</div>
-                <div class="download-cv link-line">line</div>
+            <div>
+                <p>
+                    Professional problem solving...
+                </p>
             </div>
-            <!-- 
-                ? other divs here for desktop
-             -->
-        </div>
-    </section>
-    <section>
-        scroll prompt
-    </section>
+            <div>
+                <p>
+                    ...Personal approach
+                </p>
+            </div>
+        </section>
+        <section> <!--rubiks-->
+            <div id="rubiks-home">
+                <div id="hologram-effect">
+                    <div id="shimmer"></div>
+                    <div id="holo-port"></div>
+                </div>
+                <div id="icon-cv">
+                    <div class="download-cv icon">icon</div>
+                    <div class="download-cv cube-link">Download CV</div>
+                    <div class="download-cv link-line">line</div>
+                </div>
+                <!-- 
+                    ? other divs here for desktop
+                -->
+            </div>
+        </section>
+        <section id="scroll-container">
+            <div id="scroll-prompt">V</div>
+            <div class="line left">
+                <hr>
+            </div>
+            <div class="line right">
+                <hr>
+            </div>            
+        </section>
+     </section>
     <!-- 
         TODO end page section here? have footer fixed to bottom of all content. insert other pages below this line
      -->
