@@ -133,8 +133,11 @@ h2 {
 #rubiks-home .download-cv:hover~.cube-link {
     font-weight: 600;
     color: #5100B5;
-    text-shadow: #000000 0.2rem 0.2rem;
-    background-color: #394f49C0;
+    text-shadow: #13D705 0.2rem 0.2rem;
+    background-color: #394f4999;
+}
+#rubiks-home .download-cv:hover~.cube-link span {
+    font-weight: 900;
 }
 #rubiks-home .icon-holder:active~i {
     text-shadow: #13D705 1px 1px 3px, -1px -1px 3px;
@@ -143,14 +146,27 @@ h2 {
     font-weight: 600;
     color: #13D705;
     text-shadow: #000000 0.2rem 0.2rem;
+    background-color: #394f49CC;
 }
 .cube-link {
     height: 2.2rem;
     color: #42bfdd;
-    background-color: #394F49;
+    background-color: #394F49EE;
     text-align: center;
     line-height: 2.2rem;
     z-index: 2;
+}
+.cube-link:hover {
+    font-weight: 600;
+    color: #5100B5;
+    text-shadow: #13D705 0.2rem 0.2rem;
+    background-color: #394f4999;
+}
+.cube-link:active {
+    font-weight: 600;
+    color: #13D705;
+    text-shadow: #000000 0.2rem 0.2rem;
+    background-color: #394f49CC;
 }
 /* download cv */
 #link-cv {
@@ -165,9 +181,11 @@ h2 {
 }
 .icon.download-cv {
     text-align: center;
-    margin-left: -4.3rem;
+    margin-left: -4rem;
 }
-
+.cube-link span {
+    font-weight: 900;
+}
 .link-line.download-cv {
     background: url(../images/mob-line-cv-light.png) no-repeat center center;
     height: 4.3rem;
