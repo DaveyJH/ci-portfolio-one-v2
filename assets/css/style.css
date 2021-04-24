@@ -8,6 +8,13 @@
 #2E0066
 #13D705
 #394F49
+
+*rubiks colors
+yel #FFF200
+ora #FF7F27
+red #EC1C24
+gre #0ED145
+blu #1421DA
 */
 
 * {
@@ -23,6 +30,9 @@ body {
     font-size: 1.6rem;
     font-family: "Orbitron", sans-serif;
 }
+#home-page {
+    background-color: #fff200c0;
+}
 
 /* header */
 header {
@@ -36,10 +46,14 @@ header {
 h1 {
     color: #13D705;
     letter-spacing: 0.2rem;
-    margin-top: 6rem;
+    margin-top: 3.7rem;
     margin-bottom: 2.5rem;
     text-align: center;
     font-size: 4.5rem;
+}
+/* hidden nav bar */
+#nav-bar {
+    visibility: hidden;
 }
 
 /* hologram effect text on homepage */
@@ -117,4 +131,40 @@ h2 {
     bottom: 1rem;
     right: 2rem;
 }
+
+/* scroll prompt */
+#scroll-container {
+    height: 7.6rem;
+}
+#scroll-prompt {
+    background-color: #13d705;
+    margin: 4.2rem auto 2.3rem;
+    width: 3rem;
+    height: 3rem;
+    border: 1rem solid #2e0066;
+    border-radius: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    color: #5100b5;
+    
+}
+
+.line {    
+    width: 40%;
+}
+.line hr {
+    border-top: 3px solid #2e0066;
+    width: 75%;
+    margin: -4.8rem auto 4rem;
+}
+.line.left {
+    float: left;
+    padding-left: 1rem; 
+}
+.line.right {
+    float: right;
+    padding-right: 1rem;
+}
+
+
 
