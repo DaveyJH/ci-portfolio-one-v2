@@ -114,6 +114,10 @@ In addition, you may also use this section to discuss plans for additional featu
 
 - Animate link-lines with a color change effect, continuing to the text.
 
+- I would like to have a contact form available on the website. I have researched this and only found reference to doing this using a php script.  I am not familiar with this at present and so am happy to leave this feature until I can imlpement it in its proper fashion
+    - [Possible option without having to create my own form](https://stackoverflow.com/questions/17937414/send-email-from-html-form-without-php) 
+    
+        - *Have read somewhere it is advised not to have e-mail address exposed in HTML document so needs further research*
 #
 ## Technologies Used
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
