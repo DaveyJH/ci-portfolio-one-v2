@@ -80,31 +80,58 @@ h2 {
     text-align: right;
 }
 
-/* rubiks image and hologram effect */
+/* rubiks image*/
 #rubiks-home {
     margin: 0 auto;
-    width: min(100%, 420px);
+    /* width: min(100%, 400px); */
+    width: 40rem;
     height: 40rem;
     background: url(../images/rubiks-color-1.png) no-repeat center;
-    background-size: 67.5%;
+    background-size: 27rem;
     position: relative;
 }
+/* holo effect */
 #shimmer {
     background-color: #13D70572;
-    width: 9rem;
+    width: 19rem;
     height: 12rem;
     margin: 0 auto;
     /* background-image: ; */
 }
 #holo-port {
     background-color: #394F49;
-    margin: -1.1rem auto 0;
+    margin: -0.7rem auto 0;
     width: 4.2rem;
     height: 2.2rem;
     border-radius: 50%;
+    padding: 0.6rem 1.1rem;
+    box-sizing: border-box;
 }
-
+#holo-port>div {
+    background-color: #222;
+    width: 2rem;
+    height: 1.047rem;
+    border-radius: 50%;
+}
 /* link effect */
+#rubiks-home i {
+    color: #394f49;
+    font-size: 2.2rem;
+    text-shadow: #42BFDD 1px 1px 3px, -1px -1px 3px;
+}
+#rubiks-home .icon-holder {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 16.5rem;
+    bottom: -0.5rem;
+}
+#rubiks-home .icon-holder:hover~i {
+    text-shadow: #5100B5 0px 0px 3px, -0px -0px 3px;
+}
+#rubiks-home .icon-holder:active~i {
+    text-shadow: #13D705 1px 1px 3px, -1px -1px 3px;
+}
 .cube-link {
     height: 2.2rem;
     color: #42bfdd;
@@ -113,24 +140,31 @@ h2 {
     line-height: 2.2rem;
 }
 /* download cv */
-.icon.download-cv {
-    background: violet;
+#link-cv {
+    width: 100%;
     position: absolute;
-    bottom: 6.1rem;
-    left: 17.1rem;
+    top: 31.2rem;
 }
+.icon.download-cv {
+    text-align: center;
+    margin-left: -4.3rem; 
+}
+
 .link-line.download-cv {
+    background: url(../images/mob-line-cv-light.png) no-repeat center center;
+    height: 4.3rem;
+    width: 16.8rem;
     position: absolute;
-    bottom: 0rem;
-    right: 18rem;
-    background-color: pink;
+    right: 5rem;
+
 }
 .cube-link.download-cv {
     width: 14rem;
     position: absolute;
-    bottom: 1rem;
-    right: 2rem;
+    top: 3.2rem;
+    right: 1.4rem;
 }
+
 
 /* scroll prompt */
 #scroll-container {
@@ -148,7 +182,6 @@ h2 {
     color: #5100b5;
     
 }
-
 .line {    
     width: 40%;
 }
