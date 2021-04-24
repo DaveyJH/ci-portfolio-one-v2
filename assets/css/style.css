@@ -37,6 +37,7 @@ a {
 #home-page {
     background-color: #fff200c0;
 }
+
 /* header */
 header {
     /* 
@@ -111,10 +112,23 @@ h2 {
     box-sizing: border-box;
 }
 #holo-port>div {
-    background-color: #111111EE;
     width: 2rem;
     height: 1.047rem;
     border-radius: 50%;
+    animation: holo-port-anim 0.8s steps(40, jump-both) 1.2s forwards;
+    box-sizing: border-box;
+}
+
+/* creat holo-animation */
+@keyframes holo-port-anim {
+    from {
+        background-color: #394F49DD;
+        border: 1px #333333EE solid;
+    }
+    to {
+        background-color: #111111EE;
+        border: none;
+    }
 }
 /* link effect */
 #rubiks-home i {
@@ -200,7 +214,6 @@ h2 {
     right: 1.4rem;
 }
 
-
 /* scroll prompt */
 #scroll-container {
     height: 7.6rem;
@@ -233,7 +246,6 @@ h2 {
     float: right;
     padding-right: 1rem;
 }
-
 #scroll-container i {
     font-size: 3rem;
     color: #2E0066;
