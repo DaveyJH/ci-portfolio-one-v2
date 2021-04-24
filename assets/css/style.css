@@ -133,6 +133,11 @@ h2 {
 #rubiks-home .icon-holder:hover~i {
     text-shadow: #5100B5 0px 0px 3px, -0px -0px 3px;
 }
+#rubiks-home .download-cv:hover~div {
+    text-shadow: #000000 0.2rem 0.2rem;
+}
+
+
 #rubiks-home .icon-holder:active~i {
     text-shadow: #13D705 1px 1px 3px, -1px -1px 3px;
 }
