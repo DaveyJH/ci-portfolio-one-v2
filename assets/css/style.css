@@ -53,6 +53,7 @@ h1 {
     margin-bottom: 2.5rem;
     text-align: center;
     font-size: 4.5rem;
+    text-shadow: #2E0066 2px 2px 4px;
 }
 /* hidden nav bar */
 #nav-bar {
@@ -62,11 +63,11 @@ h1 {
 /* rubiks image*/
 #rubiks-home {
     margin: 0 auto;
-    /* width: min(100%, 400px); */
-    width: 40rem;
+    width: min(100%, 400px);
+    /* width: 40rem; */
     height: 40rem;
     background: url(../images/rubiks-color-1.png) no-repeat center;
-    background-size: 67.5%;
+    background-size: 27rem;
     position: relative;
 }
 /* hologram effect text on homepage */
@@ -101,7 +102,7 @@ h2 {
     /* background-image: ; */
 }
 #holo-port {
-    background-color: #394F49;
+    background-color: #394F49DD;
     margin: -0.7rem auto 0;
     width: 4.2rem;
     height: 2.2rem;
@@ -110,7 +111,7 @@ h2 {
     box-sizing: border-box;
 }
 #holo-port>div {
-    background-color: #222;
+    background-color: #111111EE;
     width: 2rem;
     height: 1.047rem;
     border-radius: 50%;
@@ -173,9 +174,8 @@ h2 {
     top: 31.2rem;
 }
 .download-cv .icon-holder {
-    position: absolute;
-    left: 16.8rem;
-    bottom: -2.9rem;
+    position: relative;
+    margin: auto;
 }
 .icon.download-cv {
     text-align: center;
@@ -232,6 +232,11 @@ h2 {
 .line.right {
     float: right;
     padding-right: 1rem;
+}
+
+#scroll-container i {
+    font-size: 3rem;
+    color: #2E0066;
 }
 
 
