@@ -29,6 +29,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Orbitron", Verdana, sans-serif;
+    width: max(100vw, 320px);
 }
 a {
     text-decoration: none;
@@ -258,6 +259,7 @@ h2 {
     width: 0%;
     height: 4rem;
     position: relative;
+    top: 4rem;
 }
 .link .icon-holder {
     position: relative;
@@ -265,7 +267,7 @@ h2 {
 }
 /* cv */
 .link.cv {
-    top: 18.8rem;
+    top: 6.9rem;
     visibility:visible;
     width: 100%;
 }
@@ -286,6 +288,7 @@ h2 {
     top: -3rem;
 }
 /* brief */
+
 .brief .icon-holder {
     top: 3.7rem;
     left: 1.2rem;
@@ -297,6 +300,7 @@ h2 {
     bottom: 8rem;
 }
 /* portfolio */
+
 .portfolio .icon-holder {
     left: 10rem;
     bottom: 0.6rem;
@@ -308,7 +312,7 @@ h2 {
 }
 /* work-exp */
 .link.work-exp {
-    top: 3rem;
+    top: 7rem;
 }
 .work-exp .icon-holder {
     left: -12.1rem;
@@ -358,7 +362,7 @@ h2 {
 /* media queries */
 @media screen and (max-width: 400px) {
     html {
-        font-size: 51%;
+        font-size: 50%;
     }
     h1 {
         margin: 4rem auto;
@@ -378,6 +382,12 @@ h2 {
     }
     #scroll-container {
         height: 4.6rem;
+    }
+}
+@media screen and (max-height: 615px) and (max-width: 400px) {
+    #scroll-container {
+        margin-top: -3rem;
+        height: 6.1rem;
     }
 }
 /*
