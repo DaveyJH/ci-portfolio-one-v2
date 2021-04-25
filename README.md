@@ -31,9 +31,9 @@ The surface design should draw attention to calls to action, be of a professiona
 <!-- location for ease of use when working. relocate at the end of the project -->
 ## Bug List
 <!-- - WHEN HOVERING ALONG THE SAME HORIZONTAL AS THE PDF ICON AND WITHIN THE WIDTH OF THE RUBIKS IMAGE, THE TAG-LINE TEXT IS CHANGING. THIS GIVES A BAD UX AND NEEDS RECTIFYING *relative position of icon holder* -->
-    -   IF DEFAULT TEXT SIZE OF BROWSER IS CHANGED LINK-LINE AND CUBE-LINK ARE OUT OF PLACE
+<!-- -   IF DEFAULT TEXT SIZE OF BROWSER IS CHANGED LINK-LINE AND CUBE-LINK ARE OUT OF PLACE
 
-*Had not set the link-line background-size to "cover" so line was not resizing with text. Altered positions of other elements and tested* 
+*Had not set the link-line background-size to "cover" so line was not resizing with text. Altered positions of other elements and tested*  -->
 ## To Do List
 - Address line break positions of hover text for screen widths
 - Investigate semantics of a header within a section. Does the header still apply to the whole page?
@@ -49,7 +49,7 @@ The surface design should draw attention to calls to action, be of a professiona
 - *Extend title to full name on desktop?*
 - *Add footer section to link to contact section? right hand side of nav bar?*
 - ***Check sizing/positioning values (em, rem, % etc)***
-
+- "Download CV" could be a button. The style change happens when hovering over the background color, the ancchor element is only active on the text. I am happy to return to look at this at a later date but need to progress the project forward for now
 ## Comments From Users
 
 #
