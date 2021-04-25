@@ -103,8 +103,7 @@ h2 {
 /* rubiks image*/
 #rubiks-home {
     margin: 2.2rem auto;
-    width: min(100%, 400px);
-    /* width: 40rem; */
+    width: 40rem;
     height: 40rem;
     background: url(../images/rubiks-color-1.png) no-repeat center;
     background-size: 29.7rem;
@@ -112,9 +111,9 @@ h2 {
 }
 
 /* not needed?? check html */
-#rubiks-home>div {
+/* #rubiks-home>div {
     position: relative;
-}
+} */
 
 /* holo effect (not text) */
 #hologram-effect-container {
@@ -259,8 +258,9 @@ h2 {
 /* download cv */
 #link-cv {
     width: 100%;
-    position: absolute;
-    top: 32.5rem;
+    height: 15rem;
+    position: relative;
+    top: 18.8rem;
 }
 .icon-holder {
     position: relative;
@@ -272,16 +272,17 @@ h2 {
     width: 14rem;
     position: relative;
     margin-left: 50%;
-    left: 3.4em;
+    left: 13.5%;
 }
 .link-line.download-cv {
     background: url(../images/mob-line-cv-light.png) no-repeat center center;
-    height: 4.3rem;
-    width: 16.8rem;
+    background-size: cover;
+    height: 28%;
+    width: 42%;
     position: relative;
-    top: -3rem;
     margin-left: 50%;
-    left: -1.4rem;
+    left: -3.5%;
+    top: -3rem;
 }
 
 
@@ -337,7 +338,7 @@ h2 {
         margin: 0 auto;
     }
 }
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 415px) {
     #hologram-text p:nth-child(2) {
         margin-top: 1rem;
     }
