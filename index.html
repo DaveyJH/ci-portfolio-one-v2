@@ -13,7 +13,7 @@
     <!-- 
         TODO I think I will need to add a section containing the home 'page' and set a height. can header be contained in section? could leave header above section and have title disappear? again, check semantics of visibility:hidden items
      -->
-     <section id="home-page">
+    <div id="home-page">
         <div id="top">
             <header>
                 <nav id="nav-bar">
@@ -22,9 +22,9 @@
                     -->
                     nav content
                 </nav>
-                    <h1>DaveyJH</h1>
+                <h1>DaveyJH</h1>
             </header>
-            <section id="hologram-text">
+            <div id="hologram-text">
                 <div>
                     <h2>
                         Full Stack Software Developer
@@ -38,13 +38,16 @@
                         ...Personal approach
                     </p>
                 </div>
-            </section>
+            </div>
         </div>
         <div id="mid">
-            <section id="rubiks-home"> <!--rubiks-->
+            <div id="rubiks-home">
                     <div id="hologram-effect-container">
-                        <div id="shimmer"></div>
-                        <div id="holo-port"><div></div></div>
+                        <div id="shimmer">
+                        </div>
+                        <div id="holo-port">
+                            <div></div>
+                        </div>
                     </div>
                     <div class="link cv">
                         <div class="icon-holder">
@@ -86,25 +89,20 @@
                         <div class="work-exp link-line">
                         </div>
                     </div>
-            </section>
+            </div>
         </div>
-        <section id="scroll-container">
+        <div id="scroll-container">
             <div class="line left">
                 <hr>
             </div>
             <div id="scroll-prompt">
-                <a href="assets/files/dnf.html">
-                    <i class="fas fa-caret-down"></i>
-                </a>
+                <a href="assets/files/dnf.html"><i class="fas fa-caret-down"></i></a>
             </div>
             <div class="line right">
                 <hr>
             </div>            
-        </section>
-     </section>
-    <!-- 
-        TODO end page section here? have footer fixed to bottom of all content. insert other pages below this line
-     -->
+        </div>
+     </div>
     <footer>
         copyright info
     </footer>
