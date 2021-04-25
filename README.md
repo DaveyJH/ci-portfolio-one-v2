@@ -30,10 +30,12 @@ The surface design should draw attention to calls to action, be of a professiona
 
 <!-- location for ease of use when working. relocate at the end of the project -->
 ## Bug List
-- WHEN HOVERING ALONG THE SAME HORIZONTAL AS THE PDF ICON AND WITHIN THE WIDTH OF THE RUBIKS IMAGE, THE TAG-LINE TEXT IS CHANGING. THIS GIVES A BAD UX AND NEEDS RECTIFYING *relative position of icon holder*
-    - IF DEFAULT TEXT SIZE OF BROWSER IS CHANGED, HOLO-SHIMMER, LINK-LINE AND CUBE-LINK ARE OUT OF PLACE.
+<!-- - WHEN HOVERING ALONG THE SAME HORIZONTAL AS THE PDF ICON AND WITHIN THE WIDTH OF THE RUBIKS IMAGE, THE TAG-LINE TEXT IS CHANGING. THIS GIVES A BAD UX AND NEEDS RECTIFYING *relative position of icon holder* -->
+    - IF DEFAULT TEXT SIZE OF BROWSER IS CHANGED LINK-LINE AND CUBE-LINK ARE OUT OF PLACE.
 ## To Do List
+- Address line break positions of hover text for screen widths
 - Investigate semantics of a header within a section. Does the header still apply to the whole page?
+- Check if section should just be divs!
 - Check there is no issue with using a different back-up font family
 - **Create basic HTML/CSS structure**
     - *other (hidden from mobile)* icons for cube-links
@@ -42,7 +44,6 @@ The surface design should draw attention to calls to action, be of a professiona
     - scroll section
         - *link to next page when home complete*
     - ***desktop checks and changes***
-    - ***find/create second image for hologram effect***
 - *Extend title to full name on desktop?*
 - *Add footer section to link to contact section? right hand side of nav bar?*
 - ***Check sizing/positioning values (em, rem, % etc)***

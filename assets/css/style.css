@@ -49,6 +49,11 @@ header {
     font-family: "Zen Dots", monospace;
     color: #5100B5;
 }
+/* hidden nav bar */
+#nav-bar {
+    visibility: hidden;
+    height: 0rem;
+}
 h1 {
     color: #13D705;
     letter-spacing: 0.22rem;
@@ -58,24 +63,7 @@ h1 {
     font-size: 4.95rem;
     text-shadow: #2E0066 2px 2px 4px;
 }
-/* hidden nav bar */
-#nav-bar {
-    visibility: hidden;
-}
 
-/* rubiks image*/
-#rubiks-home {
-    margin: 2.2rem auto;
-    width: min(100%, 400px);
-    /* width: 40rem; */
-    height: 40rem;
-    background: url(../images/rubiks-color-1.png) no-repeat center;
-    background-size: 29.7rem;
-    position: relative;
-}
-#rubiks-home>div {
-    position: relative;
-}
 /* hologram text on homepage */
 #hologram-text {
     /* color: #5100B5; */
@@ -96,13 +84,38 @@ h2 {
     font-weight: 300;
     letter-spacing: 0.03rem;
     margin-top: 1rem;
-    animation: tag-line-show 2.8s 1s forwards;
+    animation: tag-line-show 2.8s ease-in 1s forwards;
     /* display: inline; */
 }
 #hologram-text p:nth-child(2) {
     text-align: right;
     margin-top: 0rem;
+    /* look at this for line spacing? is there a better way */
+    /* float: right;
+    width: 45%; */
 }
+
+
+/* 
+!need to address screen sizing
+*/
+
+/* rubiks image*/
+#rubiks-home {
+    margin: 2.2rem auto;
+    width: min(100%, 400px);
+    /* width: 40rem; */
+    height: 40rem;
+    background: url(../images/rubiks-color-1.png) no-repeat center;
+    background-size: 29.7rem;
+    position: relative;
+}
+
+/* not needed?? check html */
+#rubiks-home>div {
+    position: relative;
+}
+
 /* holo effect (not text) */
 #hologram-effect-container {
     position: relative;
@@ -135,6 +148,7 @@ h2 {
     animation: holo-port-anim 0.8s steps(40, jump-both) 0.6s forwards;
     box-sizing: border-box;
 }
+
 /* creat holo-animation */
 @keyframes holo-port-anim {
     from {
@@ -170,8 +184,10 @@ h2 {
         background-position-y: 20rem;
     }
     to {
-        width: 30rem;
+        width: 71.428%;
         background: url(../images/holo-thick2.png) no-repeat center center;
+        border-top-left-radius: 70%;
+        border-top-right-radius: 70%;
     }
 }
 @keyframes tag-line-show {
@@ -184,37 +200,38 @@ h2 {
 }
 
 /* link effect */
-#rubiks-home i {
+/* icon effects */
+.icon-holder i {
     color: #394f49;
     font-size: 2.2rem;
     text-shadow: #42BFDD 1px 1px 3px, -1px -1px 3px;
 }
 .icon-holder {
-    width: 2.5rem;
+    width: 2.2rem;
     height: 3rem;
-    /* z-index: 5; */
 }
-#rubiks-home .icon-holder:hover i {
+.icon-holder:hover i {
     text-shadow: #5100B5 0px 0px 3px;
 }
-#rubiks-home .download-cv:hover~.cube-link {
+.icon-holder:hover~.cube-link {
     font-weight: 600;
     color: #5100B5;
     text-shadow: #13D705 0.2rem 0.2rem;
     background-color: #394f4999;
 }
-#rubiks-home .download-cv:hover~.cube-link span {
+.icon-holder:hover~.cube-link span {
     font-weight: 900;
 }
-#rubiks-home .icon-holder:active i {
+.icon-holder:active i {
     text-shadow: #13D705 1px 1px 3px, -1px -1px 3px;
 }
-#rubiks-home .download-cv:active~.cube-link {
+.download-cv:active~.cube-link {
     font-weight: 600;
     color: #13D705;
     text-shadow: #000000 0.2rem 0.2rem;
     background-color: #394f49CC;
 }
+/* text effects */
 .cube-link {
     height: 2.2rem;
     color: #42bfdd;
@@ -222,6 +239,9 @@ h2 {
     text-align: center;
     line-height: 2.2rem;
     z-index: 2;
+}
+.cube-link span {
+    font-weight: 900;
 }
 .cube-link:hover {
     font-weight: 600;
@@ -235,40 +255,35 @@ h2 {
     text-shadow: #000000 0.2rem 0.2rem;
     background-color: #394f49CC;
 }
+
 /* download cv */
 #link-cv {
     width: 100%;
     position: absolute;
     top: 32.5rem;
 }
-.download-cv .icon-holder {
-    /* position: relative;
-    margin: auto; */
-    position: absolute;
-    left: 17rem;
+.icon-holder {
+    position: relative;
+    left: 50%;
+    margin-left: -3rem;
 }
-.icon.download-cv {
-    text-align: center;
-    margin-left: -4rem;
-}
-.cube-link span {
-    font-weight: 900;
+/* need to address spacing to make more responsive */
+.cube-link.download-cv {
+    width: 14rem;
+    position: relative;
+    margin-left: 50%;
+    left: 3.4em;
 }
 .link-line.download-cv {
     background: url(../images/mob-line-cv-light.png) no-repeat center center;
     height: 4.3rem;
     width: 16.8rem;
-    position: absolute;
-    top: 2.3rem;
-    right: 5rem;
+    position: relative;
+    top: -3rem;
+    margin-left: 50%;
+    left: -1.4rem;
+}
 
-}
-.cube-link.download-cv {
-    width: 14rem;
-    position: absolute;
-    top: 3.2rem;
-    right: 1.4rem;
-}
 
 /* scroll prompt */
 #scroll-container {
