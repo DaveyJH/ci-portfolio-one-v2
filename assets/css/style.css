@@ -74,7 +74,6 @@ h1 {
 #hologram-text {
     /* color: #5100B5; */
     color: #FFF53F;
-    width: 100%;
     padding: 0 3.3rem;
     box-sizing: border-box;
     margin-bottom: 1.2rem;
@@ -241,6 +240,10 @@ h2 {
     text-align: center;
     line-height: 2.2rem;
     z-index: 2;
+    width: 14rem;
+    position: relative;
+    margin-left: 50%;
+    display: inline-block;
 }
 .cube-link span {
     font-weight: 900;
@@ -258,26 +261,29 @@ h2 {
     background-color: #394f49CC;
 }
 
-/* download cv */
-#link-cv {
+/* icon-line-links positions etc */
+.link {
+    visibility: hidden;
     width: 100%;
     height: 4rem;
     position: relative;
-    top: 18.8rem;
 }
-.icon-holder {
-    position: relative;
-    left: 50%;
-    margin-left: -3rem;
-}
-/* need to address spacing to make more responsive */
-.cube-link.download-cv {
-    width: 14rem;
+.link .icon-holder {
     position: relative;
     margin-left: 50%;
+}
+/* cv */
+.link.cv {
+    top: 18.8rem;
+    visibility:visible;
+}
+.cv .icon-holder {
+    left: -3rem;
+}
+.cube-link.cv {
     left: 13.5%;
 }
-.link-line.download-cv {
+.link-line.cv {
     background: url(../images/mob-line-cv-light.png) no-repeat center center;
     background-size: cover;
     height: 100%;
@@ -287,7 +293,39 @@ h2 {
     left: -3.5%;
     top: -3rem;
 }
-
+/* brief */
+.brief .icon-holder {
+    top: 3.7rem;
+    left: 1.2rem;
+    z-index: 5;
+}
+.cube-link.brief {
+    width: 5.5rem;
+    right: 22rem;
+    bottom: 8rem;
+}
+/* portfolio */
+.portfolio .icon-holder {
+    left: 10rem;
+    bottom: 0.6rem;
+}
+.cube-link.portfolio {
+    width: 8.2rem;
+    left: 15rem;
+    bottom: 10rem;
+}
+/* work-exp */
+.link.work-exp {
+    top: 3rem;
+}
+.work-exp .icon-holder {
+    left: -12.1rem;
+    bottom: 2.3rem;
+}
+.cube-link.work-exp {
+    width: 10rem;
+    left: -23rem;
+}
 
 /* scroll prompt */
 #scroll-container {
@@ -307,16 +345,17 @@ h2 {
     border-radius: 3rem;
     text-align: center;
     line-height: 3rem;
-    color: #5100b5;
-    
+    color: #5100b5;    
 }
 .line {    
     width: 40%;
 }
 .line hr {
     border-top: 3px solid #2e0066;
-    width: 75%;
-    margin: -4.2rem auto 4rem;
+    width: 50%;
+    margin-top: -4rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 .line.left {
     float: left;

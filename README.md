@@ -36,14 +36,13 @@ The surface design should draw attention to calls to action, be of a professiona
 *Had not set the link-line background-size to "cover" so line was not resizing with text. Altered positions of other elements and tested*  -->
 ## To Do List
 - Address line break positions of hover text for screen widths
-- Investigate semantics of a header within a section. Does the header still apply to the whole page?
-- Check if section should just be divs!
+- **Investigate semantics of a header within a section. Does the header still apply to the whole page?**
+- **Check if section should just be divs!**
 - Check there is no issue with using a different back-up font family
-- **Create basic HTML/CSS structure**
-    - *other (hidden from mobile)* icons for cube-links
+- Create basic HTML/CSS structure
     - nav element?
     - create *other (hidden from mobile)* line images
-    - scroll section
+    - *scroll section*
         - *link to next page when home complete*
     - ***desktop checks and changes***
 - *Extend title to full name on desktop?*
