@@ -38,6 +38,7 @@ a {
 #home-page {
     background-color: #fff200c0;
     position: relative;
+    height: 100%;
 }
 #top {
     height: 26rem;
@@ -264,7 +265,7 @@ h2 {
 /* icon-line-links positions etc */
 .link {
     visibility: hidden;
-    width: 100%;
+    width: 0%;
     height: 4rem;
     position: relative;
 }
@@ -276,6 +277,7 @@ h2 {
 .link.cv {
     top: 18.8rem;
     visibility:visible;
+    width: 100%;
 }
 .cv .icon-holder {
     left: -3rem;
@@ -328,42 +330,36 @@ h2 {
 }
 
 /* scroll prompt */
+
 #scroll-container {
-    height: 4rem;
     width: 100%;
-    margin: -1.5rem auto 0;
-    padding-bottom: 1rem;
-    /* position: absolute;
-    bottom: 1.3rem; */
+    height: 3.6rem;
+    display: flex;
+}
+#lower-spacer {
+    height: 4rem;
 }
 #scroll-prompt {
     background-color: #13d705;
-    margin: 0 auto 2.3rem;
+    margin: -1.4rem auto;
     width: 3rem;
     height: 3rem;
     border: 2px solid #2e0066;
     border-radius: 3rem;
     text-align: center;
     line-height: 3rem;
-    color: #5100b5;    
+    color: #5100b5;
 }
-.line {    
+.line {   
     width: 40%;
+    height: 3rem;
+    flex-grow: 1;
+    margin: auto;
 }
 .line hr {
     border-top: 3px solid #2e0066;
     width: 50%;
-    margin-top: -4rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-.line.left {
-    float: left;
-    padding-left: 1rem; 
-}
-.line.right {
-    float: right;
-    padding-right: 1rem;
+    margin: auto;
 }
 #scroll-container i {
     font-size: 3rem;
@@ -371,7 +367,6 @@ h2 {
 }
 
 /* media queries */
-/* 
 @media screen and (max-width: 400px) {
     .link-line {
         visibility: hidden;
@@ -382,7 +377,14 @@ h2 {
     h2 {
         margin: 0 auto;
     }
+    .cube-link.cv {
+        left: 0.5rem;
+    }
+    #rubiks-home {
+        width: 100%
+    }
 }
+/* 
 @media screen and (min-width: 415px) {
     #hologram-text p:nth-child(2) {
         margin-top: 1rem;
