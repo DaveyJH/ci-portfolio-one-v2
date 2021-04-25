@@ -30,7 +30,7 @@ The surface design should draw attention to calls to action, be of a professiona
 
 <!-- location for ease of use when working. relocate at the end of the project -->
 ## Bug List
-<!-- - WHEN HOVERING ALONG THE SAME HORIZONTAL AS THE PDF ICON AND WITHIN THE WIDTH OF THE RUBIKS IMAGE, THE TAG-LINE TEXT IS CHANGING. THIS GIVES A BAD UX AND NEEDS RECTIFYING -->
+- WHEN HOVERING ALONG THE SAME HORIZONTAL AS THE PDF ICON AND WITHIN THE WIDTH OF THE RUBIKS IMAGE, THE TAG-LINE TEXT IS CHANGING. THIS GIVES A BAD UX AND NEEDS RECTIFYING *relative position of icon holder*
     - IF DEFAULT TEXT SIZE OF BROWSER IS CHANGED, HOLO-SHIMMER, LINK-LINE AND CUBE-LINK ARE OUT OF PLACE.
 ## To Do List
 - Investigate semantics of a header within a section. Does the header still apply to the whole page?
@@ -68,6 +68,7 @@ I hope to present a clean and professional, easy to navigate platform which will
 #
 ## UX &#8722; User Experience Design
 ### User Requirements
+Some example user stories which will impact on the design
 - *"As a professional recruiter, I wish to access a professional CV with as little interaction as possible.  I have very little time and so clear and quick access is essential"*
 - *"As a potential employer, I wish to learn a little about my prospective employee. I am happy to spend a little time investigating but hope the information is well presented and easy to navigate"*
 - *"As a devloper, I have a project I wish to collaborate on. I want to find someone who has the right attitude and skills to complete my objectives.  The way they present themselves will impact heavily on my decision, I will spend a lot of time investigating various aspects of the application. If I like what I find, I want to be able to contact Dave directly via the site. I may return in the future in the hope of seeing updated content"*
@@ -91,7 +92,7 @@ My initial design is based around a Rubik's cube. I hope to display a logical, s
 >*"As a first time visitor ... **I want to know what this site is about**"*
 - the text is brief and informative
 >*"As a general business person ... **Depending on my interaction, I may advise others to take a look.**"*
-- an eye catching hero image: *the image is chosen as an emotive icon related to play, puzzles and logic*
+- an eye catching hero image: *the image is chosen as an emotive icon related to enjoyment, puzzles and logic*
 #
 2. The home page has a clear arrow to show scroll is possible
 >Multiple users - ***"...well presented and easy to navigate"***

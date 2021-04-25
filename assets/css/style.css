@@ -36,6 +36,8 @@ a {
 }
 #home-page {
     background-color: #fff200c0;
+    position: relative;
+    height: 100vh;
 }
 
 /* header */
@@ -49,11 +51,11 @@ header {
 }
 h1 {
     color: #13D705;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.22rem;
     margin-top: 3.7rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.05rem;
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 4.95rem;
     text-shadow: #2E0066 2px 2px 4px;
 }
 /* hidden nav bar */
@@ -63,12 +65,12 @@ h1 {
 
 /* rubiks image*/
 #rubiks-home {
-    margin: 0 auto;
+    margin: 2.2rem auto;
     width: min(100%, 400px);
     /* width: 40rem; */
     height: 40rem;
     background: url(../images/rubiks-color-1.png) no-repeat center;
-    background-size: 27rem;
+    background-size: 29.7rem;
     position: relative;
 }
 #rubiks-home>div {
@@ -79,27 +81,34 @@ h1 {
     /* color: #5100B5; */
     color: #FFF53F;
     width: 100%;
-    padding: 0 3rem;
+    padding: 0 3.3rem;
     box-sizing: border-box;
     margin-bottom: 1.2rem;
 }
 h2 {
     color: #2e0066;
     text-align: center;
-    letter-spacing: 0.15rem;
-    margin-bottom: 1.5rem;
+    letter-spacing: 0.165rem;
+    margin-bottom: 1.65rem;
 }
 #hologram-text p {
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     font-weight: 300;
     letter-spacing: 0.03rem;
     margin-top: 1rem;
-    animation: tag-line-show 1.8s 1s forwards;
+    animation: tag-line-show 2.8s 1s forwards;
+    /* display: inline; */
 }
 #hologram-text p:nth-child(2) {
     text-align: right;
+    margin-top: 0rem;
 }
-/* holo effect */
+/* holo effect (not text) */
+#hologram-effect-container {
+    position: relative;
+    top: -0.6rem;
+    left: -0.2rem;
+}
 #shimmer {
     background: url(../images/holo-thin.png) no-repeat center center;
     background-size: 100% 12rem;
@@ -109,7 +118,6 @@ h2 {
     animation: holo-shimmer 0.6s 0.8s forwards;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
-    
 }
 #holo-port {
     background-color: #394F4999;
@@ -127,7 +135,6 @@ h2 {
     animation: holo-port-anim 0.8s steps(40, jump-both) 0.6s forwards;
     box-sizing: border-box;
 }
-
 /* creat holo-animation */
 @keyframes holo-port-anim {
     from {
@@ -185,6 +192,7 @@ h2 {
 .icon-holder {
     width: 2.5rem;
     height: 3rem;
+    /* z-index: 5; */
 }
 #rubiks-home .icon-holder:hover i {
     text-shadow: #5100B5 0px 0px 3px;
@@ -231,11 +239,13 @@ h2 {
 #link-cv {
     width: 100%;
     position: absolute;
-    top: 31.2rem;
+    top: 32.5rem;
 }
 .download-cv .icon-holder {
-    position: relative;
-    margin: auto;
+    /* position: relative;
+    margin: auto; */
+    position: absolute;
+    left: 17rem;
 }
 .icon.download-cv {
     text-align: center;
@@ -263,13 +273,16 @@ h2 {
 /* scroll prompt */
 #scroll-container {
     height: 7.6rem;
+    width: 100%;
+    position: absolute;
+    bottom: 1.3rem;
 }
 #scroll-prompt {
     background-color: #13d705;
     margin: 4.2rem auto 2.3rem;
     width: 3rem;
     height: 3rem;
-    border: 1rem solid #2e0066;
+    border: 2px solid #2e0066;
     border-radius: 3rem;
     text-align: center;
     line-height: 3rem;
@@ -282,7 +295,7 @@ h2 {
 .line hr {
     border-top: 3px solid #2e0066;
     width: 75%;
-    margin: -4.8rem auto 4rem;
+    margin: -4.2rem auto 4rem;
 }
 .line.left {
     float: left;
@@ -297,13 +310,65 @@ h2 {
     color: #2E0066;
 }
 
+/* media queries */
+@media screen and (max-width: 400px) {
+    .link-line {
+        visibility: hidden;
+    }
+    h1 {
+        margin: 1rem auto;
+    }
+    h2 {
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 420px) {
+    #hologram-text p:nth-child(2) {
+        margin-top: 1rem;
+    }
+}
+@media screen and (min-width: 730px) {
+    #hologram-text p {
+        font-size: 2.5rem;
+    }
+}
 @media screen and (min-width: 800px) {
     #hologram-text {
-        width: 740px;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h2 span {
+        visibility: hidden;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #hologram-text p {
+        width: 1020px;
         margin-left: auto;
         margin-right: auto;
     }
 }
+
+/* 
+#scroll-prompt {
+    background-color: #13d705;
+    margin: 4.2rem auto 2.3rem;
+    width: 3rem;
+    height: 3rem;
+    border: 1rem solid #2e0066;
+    border-radius: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    color: #5100b5;
+    
+} 
+.line hr {
+    border-top: 3px solid #2e0066;
+    width: 75%;
+    margin: -4.8rem auto 4rem;
+}
+*/
 
 
 
