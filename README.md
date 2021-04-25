@@ -19,6 +19,7 @@
 - [Testing](#Testing)
 - [Deployment](#Deployment)
 - [Inspiration](#Inspiration)
+- [Continued Development](#Continued-Development)
 - [Downloads](#Downloads)
 
 
@@ -31,16 +32,9 @@ The surface design should draw attention to calls to action, be of a professiona
 <!-- location for ease of use when working. relocate at the end of the project -->
 ## Bug List
 <!-- - WHEN HOVERING ALONG THE SAME HORIZONTAL AS THE PDF ICON AND WITHIN THE WIDTH OF THE RUBIKS IMAGE, THE TAG-LINE TEXT IS CHANGING. THIS GIVES A BAD UX AND NEEDS RECTIFYING *relative position of icon holder* -->
-<!-- -   IF DEFAULT TEXT SIZE OF BROWSER IS CHANGED LINK-LINE AND CUBE-LINK ARE OUT OF PLACE
-
-*Had not set the link-line background-size to "cover" so line was not resizing with text. Altered positions of other elements and tested*  -->
 ## To Do List
 - ***Desktop and tablet checks and changes***
 - **Check media break points**
-- Check if section should just be divs.
-    - Having run the HTML code through the [W3C Markup Validation Service](https://validator.w3.org/), it suggested adding headings to each section which I do not need to do. I have tried changing them all to divs and cannot see that it should cause any issue.
-- Check there is no issue with using a different back-up font family
-    - From what I can find, the fall back fonts should match the intended style and there appears to be no issue with using a different family
 - Create basic HTML/CSS structure
     - nav element?
     - create *other (hidden from mobile)* line images
@@ -102,7 +96,10 @@ My initial design is based around a Rubik's cube. I hope to display a logical, s
 2. The home page has a clear arrow to show scroll is possible
 >Multiple users - ***"...well presented and easy to navigate"***
 - The arrow shows the page has more content below *(see future ideas below)*
-
+#
+3. The home page has a link to download my CV in pdf format
+>*"As a professional recruiter, I wish to ***access a professional CV*** with as ***little interaction*** as possible*
+- The download is clearly available from the home page and requires just one click to access
 <!-- For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future: -->
@@ -170,6 +167,17 @@ I found a few websites which have elements that I really like and so, some of my
 - [Matthew Williams](https://findmatthew.com)
 - [Josue Espinosa](https://ejosue.com/)
 - [Rafael Caferati](https://caferati.me/portfolio)
+
+## Continued Development
+As my first project with a real practical application, I am hoping to keep notes that will remind me of how I learned. This helps trigger my memory and will hopefully encourage some better working practices in the future
+> *Check if section should just be divs.*
+- Having run the HTML code through the [W3C Markup Validation Service](https://validator.w3.org/), it suggested adding headings to each section which I do not need to do. I have tried changing them all to divs and cannot see that it should cause any issue.
+
+> *Check there is no issue with using a different back-up font family*
+- From what I can find, the fall back fonts should match the intended style and there appears to be no issue with using a different family
+
+> *If default text size of browser is changed link-line and cube-link are out of place*
+- Had not set the link-line background-size to "cover" so line was not resizing with text. Altered positions of other elements and tested
 
 ## Credits
 *First credits must be given to the developers responsible for the content above.  Their websites gave some real insight into how I could develop my own creative ideas. After viewing their sites, I took myself back in the development/design stage to get a better initial concept of how I wanted my final product to look*
