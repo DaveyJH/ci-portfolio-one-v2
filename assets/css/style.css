@@ -22,9 +22,9 @@ blu #1421DA
     margin: 0;
     border: none;
 }
-/* allow thick blue focus border for accessibility, only visible when tabbing by keyboard. do i need to conider other accessibility methods? */
+/* allow thick red focus border for accessibility, only visible when tabbing by keyboard. do i need to conider other accessibility methods? */
 *:focus:focus-visible {
-    outline: #42BFDD 0.6rem solid;
+    outline: #EC1C24 outset 1rem;
 }
 /* font-size setting means rem*10=px */
 html {
@@ -334,8 +334,8 @@ h2 {
     background-size: max(calc(30vw - 19rem), 8rem) 10rem;
     width: 18vw;
     position: relative;
-    left: 7.4rem;
-    bottom: 6.6rem;
+    left: 37.4rem;
+    bottom: 13.9rem;
 }
 /* work-exp */
 .link.work-exp {
