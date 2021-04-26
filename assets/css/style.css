@@ -45,6 +45,9 @@ a {
     position: relative;
     min-height: 100vh;
 }
+/* 
+set height at which rubiks-home appears
+ */
 #top {
     height: 26rem;
 }
@@ -68,7 +71,12 @@ h1 {
     font-size: 4.95rem;
     text-shadow: #2E0066 2px 2px 4px;
 }
-
+h2 {
+    color: #2e0066;
+    text-align: center;
+    letter-spacing: 0.165rem;
+    margin-bottom: 1.65rem;
+}
 /* hologram text on homepage */
 #hologram-text {
     /* color: #5100B5; */
@@ -80,26 +88,21 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
-h2 {
-    color: #2e0066;
-    text-align: center;
-    letter-spacing: 0.165rem;
-    margin-bottom: 1.65rem;
-}
 #hologram-text p {
     font-size: 2.1rem;
     font-weight: 300;
     letter-spacing: 0.03rem;
     margin-top: 1rem;
     animation: tag-line-show 2.8s ease-in 1s forwards;
-    /* display: inline; */
 }
 #hologram-text p:nth-child(2) {
     text-align: right;
     margin-top: 0rem;
-    /* look at this for line spacing? is there a better way */
-    /* float: right;
-    width: 45%; */
+    /* 
+    look at this for line spacing? is there a better way
+        float: right;
+        width: 45%; 
+    */
 }
 
 /* rubiks image*/
@@ -259,24 +262,14 @@ h2 {
     width: 0%;
     height: 4rem;
     position: relative;
+    /* sets height of portfolio and brief rubiks-links */
     top: 4rem;
 }
 .link .icon-holder {
     position: relative;
     margin-left: 50%;
 }
-.flat {
-    background-image: url(../images/flat100.png);
-    background-position-y: center;
-    height: 2rem;
-    background-repeat: no-repeat;
-    position: relative;
-}
-.angle {
-    position: relative;
-    height: 4rem;
-    width: 4rem;
-}
+
 /* cv */
 .link.cv {
     top: 6.9rem;
@@ -321,7 +314,6 @@ h2 {
     left: max(26vw, 20rem);
     bottom: 9.8rem;
 }
-
 /* work-exp */
 .link.work-exp {
     top: 7rem;
@@ -342,9 +334,6 @@ h2 {
     height: 3.2rem;
     display: flex;
 }
-#lower-spacer {
-    height: 4rem;
-}
 #scroll-prompt {
     background-color: #13d705;
     margin: -1.4rem auto;
@@ -355,6 +344,16 @@ h2 {
     text-align: center;
     line-height: 3rem;
     color: #5100b5;
+    animation: scroll-grow 2.1s 5 ease-in-out 5s alternate forwards;
+}
+
+@keyframes scroll-grow {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
 }
 #scroll-prompt:hover {
     border: 0.5rem solid #2e0066;
@@ -364,12 +363,14 @@ h2 {
     width: 40%;
     height: 3rem;
     flex-grow: 1;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .line hr {
     border-top: 3px solid #2e0066;
     width: 50%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 #scroll-container i {
     font-size: 3rem;
@@ -407,8 +408,12 @@ h2 {
     }
 }
 @media screen and (min-width: 550px) {
+    /* make rubiks-home responsive */
     html {
         font-size: min(1.4vw, 77.6%);
+    }
+    #top {
+        height: 25rem;
     }
     .link {
         visibility: visible;
@@ -447,12 +452,38 @@ h2 {
         top: -6.2rem;
         left: -2.5rem;
     }
+    @keyframes brief-line-grow {
+        from {
+            visibility: hidden;
+            background-size: max(calc(0vw - 0rem), 0rem) 10rem;
+        }
+        
+        to {
+            visibility: visible;
+            background-size: max(calc(32vw - 3rem), 19.4rem) 10rem;
+        }
+    }
     .brief .flat {
         background-position-x: right;
         top: -10.75rem;
         right: 62.2rem;
-        background-size: max(calc(32vw - 3rem), 19.4rem) 10rem;
+        /* background-size: max(calc(32vw - 3rem), 19.4rem) 10rem; */
+        height: 10;
         width: 200%;
+        animation: brief-flat-grow 3s ease 2s forwards;
+        visibility: hidden;
+    }
+
+    @keyframes brief-flat-grow {
+        from {
+            visibility: hidden;
+            background-size: max(calc(0vw - 0rem), 0rem) 10rem;
+        }
+        
+        to {
+            visibility: visible;
+            background-size: max(calc(32vw - 3rem), 19.4rem) 10rem;
+        }
     }
 }
 /*
