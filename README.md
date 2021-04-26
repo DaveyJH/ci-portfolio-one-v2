@@ -36,7 +36,6 @@ The surface design should draw attention to calls to action, be of a professiona
 - ***Desktop and tablet checks and changes***
 - **Check media break points**
 - Create basic HTML/CSS structure
-    - nav element?
     - create *other (hidden from mobile)* line images
     - *scroll section*
         - *link to next page when home complete*
