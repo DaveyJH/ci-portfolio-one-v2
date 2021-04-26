@@ -280,18 +280,35 @@ h2 {
     left: -3rem;
 }
 .cube-link.cv {
-    left: 13.5%;
+    left: max(calc(22vw - 13.2rem), 5.4rem);
 }
-.link-line.cv {
-    background: url(../images/mob-line-cv-light.png) no-repeat center center;
-    background-size: cover;
-    height: 100%;
-    width: 42%;
+.cv .flat {
+    background-image: url(../images/flat100.png);
+        background-position-y: center;
+        height: 2rem;
+        background-repeat: no-repeat;
+        position: relative;
+        background-position-x: left;
+        background-size: max(calc(30vw - 19rem), 8rem) 10rem;
+        width: 18vw;
+        bottom: 4.3rem;
+        left: 22.6rem;
+}
+.cv .angle {
+    background: url(../images/45-tl40.png);
+    background-size: 100%;
     position: relative;
+    height: 4rem;
+    width: 4rem;
     margin-left: 50%;
-    left: -3.5%;
-    top: -3rem;
+    bottom: 3rem;
+    left: -0.8rem;
 }
+
+
+
+
+
 /* brief */
 .brief .icon-holder {
     top: 3.7rem;
@@ -310,7 +327,6 @@ h2 {
 }
 .cube-link.portfolio {
     width: 8.2rem;
-    /* left: 15rem; */
     left: max(26vw, 20rem);
     bottom: 9.8rem;
 }
