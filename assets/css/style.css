@@ -43,7 +43,7 @@ a {
 #home-page {
     background-color: #fff200c0;
     position: relative;
-    height: 100%;
+    min-height: 100vh;
 }
 #top {
     height: 26rem;
