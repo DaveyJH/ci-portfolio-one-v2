@@ -295,7 +295,7 @@ h2 {
         left: 22.6rem;
 }
 .cv .angle {
-    background: url(../images/45-tl40.png);
+    background: url(../images/45-tl40.png) no-repeat;
     background-size: 100%;
     position: relative;
     height: 4rem;
@@ -451,8 +451,9 @@ h2 {
         background: url(../images/45-tr40.png) no-repeat;
         background-size: 100%;
         margin-left: 50%;
-        left: 34%;
+        left: 13.6rem;
         bottom: 9.4rem;
+        animation: portfolio-angle-grow 1.5s ease 0.9s both;
     }
     .portfolio .flat {
         background-position-x: left;
@@ -466,6 +467,7 @@ h2 {
         background-size: 100%;
         left: 3rem;
         bottom: 5.57rem;
+        animation: work-exp-angle-grow 1.5s ease 2.1s both;
     }
     .work-exp .flat {
         background-position: right;
@@ -479,17 +481,7 @@ h2 {
         margin-left: 50%;
         top: -6.2rem;
         left: -2.5rem;
-    }
-    @keyframes brief-line-grow {
-        from {
-            visibility: hidden;
-            background-size: max(calc(0vw - 0rem), 0rem) 10rem;
-        }
-        
-        to {
-            visibility: visible;
-            background-size: max(calc(32vw - 3rem), 19.4rem) 10rem;
-        }
+        animation: brief-angle-grow 1.5s ease 0.7s both;
     }
     .brief .flat {
         background-position-x: right;
@@ -497,10 +489,13 @@ h2 {
         right: 62.2rem;
         height: 10;
         width: 200%;
-        animation: brief-flat-grow 3s ease 2s forwards;
-        visibility: hidden;
+        animation: brief-flat-grow 3s ease 2.1s both;
+    }
+    .cv .angle {
+        animation: cv-angle-grow 1.5s ease 2.3s both;
     }
 
+    /* line appear effects */
     @keyframes brief-flat-grow {
         from {
             visibility: hidden;
@@ -512,6 +507,92 @@ h2 {
             background-size: max(calc(32vw - 3rem), 19.4rem) 10rem;
         }
     }
+    @keyframes portfolio-flat-grow {
+    }
+    @keyframes brief-angle-grow {
+        from {
+            visibility: hidden;
+            background-size: 0%;
+            left: 1.5rem;
+            top:-2.2rem;
+        }
+
+        80% {
+            visibility: hidden;
+            background-size: 0%;
+            left: 1.5rem;
+            top:-2.2rem;
+        }
+        
+        to {
+            visibility: visible;
+            background-size: 100%;
+            top: -6.2rem;
+            left: -2.5rem;
+        }
+    }
+    @keyframes portfolio-angle-grow {
+        from {
+            visibility: hidden;
+            background-size: 0%;
+            bottom: 5.4rem;
+        }
+
+        80% {
+            visibility: hidden;
+            background-size: 0%;
+            bottom: 5.4rem;
+        }
+        
+        to {
+            visibility: visible;
+            background-size: 100%;
+            left: 13.6rem;
+            bottom: 9.4rem;
+        }
+    }
+    @keyframes work-exp-angle-grow {
+        from {
+            visibility: hidden;
+            background-size: 0%;
+            left: 7rem;
+        }
+
+        80% {
+            visibility: hidden;
+            background-size: 0%;
+            left: 7rem;
+        }
+        
+        to {
+            visibility: visible;
+            background-size: 100%;
+            left: 3rem;
+        }
+    }
+    @keyframes cv-angle-grow {
+        from {
+            visibility: hidden;
+            background-size: 0%;
+            bottom: 4rem;
+            left: -3.2rem;
+        }
+
+        80% {
+            visibility: hidden;
+            background-size: 0%;
+            bottom: 4rem;
+            left: -3.2rem;
+        }
+        
+        to {
+            visibility: visible;
+            background-size: 100%;
+            bottom: 3rem;
+            left: -0.8rem;
+        }
+    }
+
 }
 /*
 @media screen and (max-height: 615px) and (max-width: 400px) {
