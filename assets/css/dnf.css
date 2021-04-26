@@ -1,4 +1,15 @@
 body {
     padding: 15% 25%;
     font-size: 200%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #1421DA;
+    background-color: #FF7F27;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #323031;
+        color: #EC368D;
+    }
+}
+

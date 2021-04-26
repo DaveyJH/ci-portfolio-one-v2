@@ -79,8 +79,6 @@ h2 {
 }
 /* hologram text on homepage */
 #hologram-text {
-    /* color: #5100B5; */
-    color: #FFF53F;
     padding: 0 3.3rem;
     box-sizing: border-box;
     margin-bottom: 1.2rem;
@@ -93,7 +91,7 @@ h2 {
     font-weight: 300;
     letter-spacing: 0.03rem;
     margin-top: 1rem;
-    animation: tag-line-show 2.8s ease-in 1s forwards;
+    animation: tag-line-show 2.8s ease-in 1s both;
 }
 #hologram-text p:nth-child(2) {
     text-align: right;
@@ -305,10 +303,6 @@ h2 {
     left: -0.8rem;
 }
 
-
-
-
-
 /* brief */
 .brief .icon-holder {
     top: 3.7rem;
@@ -431,6 +425,7 @@ h2 {
     #top {
         height: 25rem;
     }
+    /* link positioning */
     .link {
         visibility: visible;
         width: 100%;
@@ -499,7 +494,6 @@ h2 {
     .cv .flat {
         animation: cv-flat-grow 3s ease 3.5s both;
     }
-
     /* line appear effects */
     @keyframes brief-flat-grow {
         from {
@@ -623,6 +617,64 @@ h2 {
     }
 
 }
+
+
+/* dark mode testing 
+@media (prefers-color-scheme: dark) {
+    #home-page {
+        background-color: #323031;
+    }
+    h1 {
+        color: #F45A00;
+        text-shadow: #08FBE7 2px 2px 4px;
+    }
+    h2 {
+        color: #05FF1E;
+    }
+    #hologram-text p {
+        animation: dark-tag-line-show 2.8s ease-in 1s both;
+    }
+    @keyframes dark-tag-line-show {
+        from {
+            color: #323031;
+        }
+        to {
+            color: #76B041;
+        }
+    }
+    #rubiks-home {
+        background: url(../images/rubiks-color-2.png) no-repeat center;
+        background-size: 100%;
+    }
+    .portfolio .icon-holder {
+        left: 9.7rem;
+    }
+    .brief .icon-holder {
+        left: 0.9rem;
+    }
+    .cv .icon-holder {
+        left: -3.3rem;
+    }
+    .cube-link {
+        color: #FFC914;
+    }
+    #scroll-prompt {
+        background-color: #76B041;
+        border: 0.2rem solid #05FF1E;
+    }
+    #scroll-prompt:hover {
+        border: 0.5rem solid #05FF1E;
+        margin-top: -1.7rem;
+    }
+    #scroll-container i {
+        color: #05FF1E;
+    }
+    .line hr {
+        border-top: 3px solid #05FF1E;
+    }    
+
+}
+*/
 /*
 @media screen and (max-height: 615px) and (max-width: 400px) {
     #scroll-container {
