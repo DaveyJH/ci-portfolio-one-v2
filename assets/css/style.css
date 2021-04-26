@@ -48,9 +48,6 @@ a {
 #top {
     height: 26rem;
 }
-#bottom {
-    height: 55rem;
-}
 
 /* header */
 header {
@@ -311,24 +308,7 @@ h2 {
 .cube-link.brief {
     width: 5rem;
     left: min(-32vw, -22rem);
-    bottom: 8rem;
-}
-.brief .angle {
-    background: url(../images/45-tl40.png) no-repeat;
-    background-size: 100%;
-    margin-left: 50%;
-    top: -6.2rem;
-    left: -2.5rem;
-}
-/* .brief.link-line {
-    width: 100%;
-} */
-.brief .flat {
-    background-position-x: right;
-    top: -10.75rem;
-    right: 62.2rem;
-    background-size: max(calc(32vw - 3rem), 19.4rem) 10rem;
-    width: 200%;
+    bottom: 6.6rem;
 }
 /* portfolio */
 .portfolio .icon-holder {
@@ -339,22 +319,9 @@ h2 {
     width: 8.2rem;
     /* left: 15rem; */
     left: max(26vw, 20rem);
-    bottom: 10rem;
+    bottom: 9.8rem;
 }
-.portfolio>.angle {
-    background: url(../images/45-tr40.png) no-repeat;
-    background-size: 100%;
-    margin-left: 50%;
-    left: 34%;
-    bottom: 9.4rem;
-}
-.portfolio .flat {
-    background-position-x: left;
-    background-size: max(calc(30vw - 19rem), 8rem) 10rem;
-    width: 18vw;
-    left: 37.4rem;
-    bottom: 13.9rem;
-}
+
 /* work-exp */
 .link.work-exp {
     top: 7rem;
@@ -446,6 +413,46 @@ h2 {
     .link {
         visibility: visible;
         width: 100%;
+    }
+    .flat {
+        background-image: url(../images/flat100.png);
+        background-position-y: center;
+        height: 2rem;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .angle {
+        position: relative;
+        height: 4rem;
+        width: 4rem;
+    }
+    .portfolio>.angle {
+        background: url(../images/45-tr40.png) no-repeat;
+        background-size: 100%;
+        margin-left: 50%;
+        left: 34%;
+        bottom: 9.4rem;
+    }
+    .portfolio .flat {
+        background-position-x: left;
+        background-size: max(calc(30vw - 19rem), 8rem) 10rem;
+        width: 18vw;
+        left: 37.4rem;
+        bottom: 13.9rem;
+    }
+    .brief .angle {
+        background: url(../images/45-tl40.png) no-repeat;
+        background-size: 100%;
+        margin-left: 50%;
+        top: -6.2rem;
+        left: -2.5rem;
+    }
+    .brief .flat {
+        background-position-x: right;
+        top: -10.75rem;
+        right: 62.2rem;
+        background-size: max(calc(32vw - 3rem), 19.4rem) 10rem;
+        width: 200%;
     }
 }
 /*
