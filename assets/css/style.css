@@ -327,7 +327,7 @@ h2 {
 }
 .cube-link.portfolio {
     width: 8.2rem;
-    left: max(26vw, 20rem);
+    left: max(calc(26vw - 2rem), 20rem);
     bottom: 9.8rem;
 }
 /* work-exp */
@@ -461,6 +461,18 @@ h2 {
         left: 37.4rem;
         bottom: 13.9rem;
     }
+    .work-exp .angle {
+        background: url(../images/45-tr40.png) no-repeat;
+        background-size: 100%;
+        left: 3rem;
+        bottom: 5.57rem;
+    }
+    .work-exp .flat {
+        background-position: right;
+        bottom:6.8rem;
+        left: -22.8em;
+        background-size: max(calc(32vw - 32rem), 10rem) 10rem;
+    }
     .brief .angle {
         background: url(../images/45-tl40.png) no-repeat;
         background-size: 100%;
@@ -483,7 +495,6 @@ h2 {
         background-position-x: right;
         top: -10.75rem;
         right: 62.2rem;
-        /* background-size: max(calc(32vw - 3rem), 19.4rem) 10rem; */
         height: 10;
         width: 200%;
         animation: brief-flat-grow 3s ease 2s forwards;
