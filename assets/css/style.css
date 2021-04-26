@@ -284,15 +284,15 @@ h2 {
 }
 .cv .flat {
     background-image: url(../images/flat100.png);
-        background-position-y: center;
-        height: 2rem;
-        background-repeat: no-repeat;
-        position: relative;
-        background-position-x: left;
-        background-size: max(calc(30vw - 19rem), 8rem) 10rem;
-        width: 18vw;
-        bottom: 4.3rem;
-        left: 22.6rem;
+    background-position-y: center;
+    height: 2rem;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-x: left;
+    background-size: max(calc(30vw - 19rem), 8rem) 10rem;
+    width: 18vw;
+    bottom: 4.3rem;
+    left: 22.6rem;
 }
 .cv .angle {
     background: url(../images/45-tl40.png) no-repeat;
@@ -360,7 +360,7 @@ h2 {
     text-align: center;
     line-height: 3rem;
     color: #5100b5;
-    animation: scroll-grow 2.1s 5 ease-in-out 5s alternate forwards;
+    animation: scroll-grow 2.1s ease-in-out 6s forwards;
 }
 
 @keyframes scroll-grow {
@@ -461,6 +461,7 @@ h2 {
         width: 18vw;
         left: 37.4rem;
         bottom: 13.9rem;
+        animation: portfolio-flat-grow 3s ease 2.3s both;
     }
     .work-exp .angle {
         background: url(../images/45-tr40.png) no-repeat;
@@ -474,6 +475,7 @@ h2 {
         bottom:6.8rem;
         left: -22.8em;
         background-size: max(calc(32vw - 32rem), 10rem) 10rem;
+        animation: work-exp-flat-grow 3s ease 3.3s both;
     }
     .brief .angle {
         background: url(../images/45-tl40.png) no-repeat;
@@ -494,20 +496,47 @@ h2 {
     .cv .angle {
         animation: cv-angle-grow 1.5s ease 2.3s both;
     }
+    .cv .flat {
+        animation: cv-flat-grow 3s ease 3.5s both;
+    }
 
     /* line appear effects */
     @keyframes brief-flat-grow {
         from {
-            visibility: hidden;
             background-size: max(calc(0vw - 0rem), 0rem) 10rem;
         }
         
         to {
-            visibility: visible;
             background-size: max(calc(32vw - 3rem), 19.4rem) 10rem;
         }
     }
     @keyframes portfolio-flat-grow {
+        from {
+            background-size: max(calc(0vw - 0rem), 0rem) 10rem;
+        }
+        
+        to {
+            background-size: max(calc(30vw - 19rem), 8rem) 10rem;
+        }
+    }
+    @keyframes work-exp-flat-grow {
+        from {
+            background-size: max(calc(0vw - 0rem), 0rem) 10rem;
+        }
+        to {
+            background-size: max(calc(32vw - 32rem), 10rem) 10rem;
+        }
+        
+    }
+    @keyframes cv-flat-grow {
+        from {
+            background-size: max(calc(0vw - 0rem), 0rem) 10rem;
+        }
+        to {
+            background-size: max(calc(30vw - 19rem), 8rem) 10rem;
+        }
+        
+
     }
     @keyframes brief-angle-grow {
         from {
