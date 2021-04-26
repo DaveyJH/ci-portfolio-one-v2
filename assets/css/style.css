@@ -22,6 +22,10 @@ blu #1421DA
     margin: 0;
     border: none;
 }
+/* allow thick blue focus border for accessibility, only visible when tabbing by keyboard. do i need to conider other accessibility methods? */
+*:focus:focus-visible {
+    outline: #42BFDD 0.6rem solid;
+}
 /* font-size setting means rem*10=px */
 html {
     font-size: 62.5%;

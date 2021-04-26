@@ -184,7 +184,9 @@ As my first project with a real practical application, I am hoping to keep notes
 
 ### Content
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
-
+- **Tabindex** - The focus border was not very visible when tabbing through elements. I have removed the tab option from the icons as it confused the navigation of the site. From what I can work out, the way in which I have done this should not affect the overall function of the site
+    - [Stack Overflow](https://stackoverflow.com/questions/54087544/how-to-have-a-css-outline-on-a-button-tag-only-by-tab-but-not-on-click/54087710) *for info*
+        - Credit [kimbaudi](https://stackoverflow.com/users/1097123/kimbaudi)
 ### Media
 - The photos used in this site were obtained from ...
 
