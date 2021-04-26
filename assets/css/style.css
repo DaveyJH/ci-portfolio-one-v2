@@ -29,7 +29,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Orbitron", Verdana, sans-serif;
-    width: max(100vw, 320px);
+    min-width: 320px;
 }
 a {
     text-decoration: none;
@@ -79,6 +79,9 @@ h1 {
     padding: 0 3.3rem;
     box-sizing: border-box;
     margin-bottom: 1.2rem;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 h2 {
     color: #2e0066;
@@ -295,19 +298,19 @@ h2 {
     z-index: 5;
 }
 .cube-link.brief {
-    width: 5.5rem;
-    right: 22rem;
+    width: 5rem;
+    left: min(-32vw, -22rem);
     bottom: 8rem;
 }
 /* portfolio */
-
 .portfolio .icon-holder {
     left: 10rem;
     bottom: 0.6rem;
 }
 .cube-link.portfolio {
     width: 8.2rem;
-    left: 15rem;
+    /* left: 15rem; */
+    left: max(26vw, 20rem);
     bottom: 10rem;
 }
 /* work-exp */
@@ -319,8 +322,9 @@ h2 {
     bottom: 2.3rem;
 }
 .cube-link.work-exp {
+    top: -2.5rem;
     width: 10rem;
-    left: -23rem;
+    left: min(-27vw, -27rem);
 }
 
 /* scroll prompt */
@@ -337,11 +341,15 @@ h2 {
     margin: -1.4rem auto;
     width: 3rem;
     height: 3rem;
-    border: 2px solid #2e0066;
-    border-radius: 3rem;
+    border: 0.2rem solid #2e0066;
+    border-radius: 50%;
     text-align: center;
     line-height: 3rem;
     color: #5100b5;
+}
+#scroll-prompt:hover {
+    border: 0.5rem solid #2e0066;
+    margin-top: -1.7rem;
 }
 .line {   
     width: 40%;
@@ -360,6 +368,7 @@ h2 {
 }
 
 /* media queries */
+
 @media screen and (max-width: 400px) {
     html {
         font-size: 50%;
@@ -384,12 +393,22 @@ h2 {
         height: 4.6rem;
     }
 }
+@media screen and (min-width: 550px) {
+    html {
+        font-size: min(1.4vw, 77.6%);
+    }
+    .link {
+        visibility: visible;
+        width: 100%;
+    }
+}
+/*
 @media screen and (max-height: 615px) and (max-width: 400px) {
     #scroll-container {
         margin-top: -3rem;
         height: 6.1rem;
-    }
-}
+    } 
+}*/
 /*
 @media screen and (min-width: 800px) {
     #hologram-text p:nth-child(2) {
