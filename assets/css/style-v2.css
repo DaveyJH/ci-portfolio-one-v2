@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Orbitron&family=Turret+Road&family=Zen+Dots&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+/* allow thick red focus border for accessibility, only visible when tabbing by keyboard. do i need to conider other accessibility methods? */
+*:focus:focus-visible {
+    outline: #EC1C24 outset 1rem;
+}
+/* font-size setting means rem*10=px */
+html {
+    font-size: 62.5%;
+}   
+body {
+    font-size: 1.6rem;
+    font-family: "Orbitron", Verdana, sans-serif;
+    min-width: 32rem;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* first page */
+#home-page {
+    background-color: #fff200c0;
+    position: relative;
+    min-height: 100vh;
+}
+h1, h2 {
+    font-family: "Zen Dots", Impact, fantasy;
+}
+h1 {
+    color: #13D705;
+    letter-spacing: 0.22rem;
+    text-align: center;
+    font-size: 4.95rem;
+    text-shadow: #2E0066 0.2rem 0.2rem 0.4rem;
+}
+h2 {
+    color: #2E0066;
+}
+.tag-line {
+    color: #5100B5;
+}
+
+#rubiks>div>button {
+    height: 2.4rem;
+    color: #42bfdd;
+    border-radius: 0.5rem;
+    border: 0.3rem #394F49 ;
+    background-color: #394F49EE;
+    text-align: center;
+    line-height: 2.2rem;
+    z-index: 2;
+    width: 10rem;
+    text-transform: capitalize;
+    font-family: "Orbitron", Verdana, sans-serif;
+}
+
+
+/* @media screen and (max-width: 360px) {
+#home-page {
+    background-color: red;
+}
+}
+@media screen and (max-height: 640px) {
+    #rubiks {
+        background-color: #5500B5;
+    }
+    } */
