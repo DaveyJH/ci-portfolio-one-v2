@@ -35,16 +35,12 @@ The surface design should draw attention to calls to action, be of a professiona
 ## To Do List
 - ***Desktop and tablet checks and changes***
 - **Check media break points**
-- Create basic HTML/CSS structure
-    - create *other (hidden from mobile)* line images
-    - *scroll section*
-        - *link to next page when home complete*
-    
+- *scroll section*
+    - *link to next page when home complete*  
 - *Extend title to full name on desktop?*
 - *Add footer section to link to contact section? right hand side of nav bar?*
-- ***Check sizing/positioning values (em, rem, % etc)***
-- Address line break positions of hover text for screen widths
-- "Download CV" could be a button. The style change happens when hovering over the background color, the ancchor element is only active on the text. I am happy to return to look at this at a later date but need to progress the project forward for now
+- *Address line break positions of hover text for screen widths*
+- "Download CV" could be a button. The style change happens when hovering over the background color, the anchor element is only active on the text. I am happy to return to look at this at a later date but need to progress the project forward for now, *this applies to all cube-link text boxes*
 ## Comments From Users
 
 #

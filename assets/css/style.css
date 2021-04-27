@@ -33,7 +33,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Orbitron", Verdana, sans-serif;
-    min-width: 320px;
+    min-width: 32rem;
 }
 a {
     text-decoration: none;
@@ -70,7 +70,7 @@ h1 {
     margin-bottom: 2.05rem;
     text-align: center;
     font-size: 4.95rem;
-    text-shadow: #2E0066 2px 2px 4px;
+    text-shadow: #2E0066 0.2rem 0.2rem 0.4rem;
 }
 h2 {
     color: #2e0066;
@@ -107,6 +107,7 @@ h2 {
 /* rubiks image*/
 #rubiks-home {
     margin: 2.2rem auto;
+    /* !!!!changing width and height/backrgound size will cause all icon-links to be mis-aligned!!!! */
     width: 40rem;
     height: 40rem;
     background: url(../images/rubiks-color-1.png) no-repeat center;
@@ -150,7 +151,7 @@ h2 {
 @keyframes holo-port-anim {
     from {
         background-color: #394F49DD;
-        border: 1px #333333EE solid;
+        border: 0.1rem #333333EE solid;
         transform: scale(0.4);
     }
         to {
@@ -191,7 +192,7 @@ h2 {
 }
 @keyframes tag-line-show {
     from {
-        color: #FFF200;
+        color: #FFF53F;
     }
     to {
         color: #5100B5;
@@ -203,7 +204,7 @@ h2 {
 .icon-holder i {
     color: #394f49;
     font-size: 2.2rem;
-    text-shadow: #42BFDD 1px 1px 3px, -1px -1px 3px;
+    text-shadow: #42BFDD 0.1rem 0.1rem 0.3rem, -0.1rem -0.1rem 0.3rem;
 }
 .icon-holder {
     width: 1.7rem;
@@ -211,7 +212,7 @@ h2 {
 }
 /* icon effects */
 .icon-holder:hover i {
-    text-shadow: #5100B5 0px 0px 3px;
+    text-shadow: #5100B5 0rem 0rem 0.3rem;
 }
 .icon-holder:hover~.cube-link {
     font-weight: 600;
@@ -220,7 +221,7 @@ h2 {
     background-color: #394f4999;
 }
 .icon-holder:active i {
-    text-shadow: #13D705 1px 1px 3px, -1px -1px 3px;
+    text-shadow: #13D705 0.1rem 0.1rem 0.3rem, -0.1rem -0.1rem 0.3rem;
 }
 .icon-holder:active~.cube-link {
     font-weight: 600;
@@ -264,7 +265,7 @@ h2 {
     width: 0%;
     height: 4rem;
     position: relative;
-    /* sets height of portfolio and brief rubiks-links */
+    /* sets height of .portfolio and .brief rubiks-links */
     top: 4rem;
 }
 .link .icon-holder {
@@ -358,7 +359,7 @@ h2 {
     text-align: center;
     line-height: 3rem;
     color: #5100b5;
-    animation: scroll-grow 2.1s ease-in-out 6s both;
+    animation: scroll-grow 2.1s ease-in-out 2s both;
 }
 #scroll-prompt:hover {
     border: 0.5rem solid #2e0066;
@@ -372,7 +373,7 @@ h2 {
     margin-right: auto;
 }
 .line hr {
-    border-top: 3px solid #2e0066;
+    border-top: 0.3rem solid #2e0066;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -387,7 +388,7 @@ h2 {
 }
 @keyframes scroll-grow {
     from {
-        transform: scale(0.7);
+        transform: scale(0.8);
     }
     to {
         transform: scale(1.3);
@@ -470,7 +471,7 @@ h2 {
     .work-exp .flat {
         background-position: right;
         bottom:6.8rem;
-        left: -22.8em;
+        left: -36.4rem;
         background-size: max(calc(32vw - 32rem), 10rem) 10rem;
         animation: work-exp-flat-grow 3s ease 3.3s both;
     }
@@ -486,7 +487,6 @@ h2 {
         background-position-x: right;
         top: -10.75rem;
         right: 62.2rem;
-        height: 10;
         width: 200%;
         animation: brief-flat-grow 3s ease 2.1s both;
     }
@@ -617,7 +617,9 @@ h2 {
             left: -0.8rem;
         }
     }
-
+    #scroll-prompt {
+    animation-delay: 6s; 
+    }
 }
 
 /* dark mode testing  */
@@ -630,7 +632,7 @@ h2 {
     }
     h1 {
         color: #F45A00;
-        text-shadow: #08FBE7 2px 2px 10px;
+        text-shadow: #08FBE7 0.2rem 0.2rem 1rem;
     }
     h2 {
         color: #05FF1E;
@@ -675,7 +677,7 @@ h2 {
         color: #05FF1E;
     }
     .line hr {
-        border-top: 3px solid #05FF1E;
+        border-top: 0.3rem solid #05FF1E;
     }    
 
     /* link-line images */
@@ -697,10 +699,10 @@ h2 {
         color: #FFC914;
     }
     .icon-holder i {
-        text-shadow: #FFC914 1px 1px 3px, -1px -1px 3px;
+        text-shadow: #FFC914 0.1rem 0.1rem 0.3rem, -0.1rem -0.1rem 0.3rem;
     }
     .icon-holder:hover i {
-        text-shadow: #EC368D 0px 0px 3px;
+        text-shadow: #EC368D 0rem 0rem 0.3rem;
     }
     .icon-holder:hover~.cube-link {
         font-weight: 600;
@@ -709,7 +711,7 @@ h2 {
         background-color: #394f4999;
     }
     .icon-holder:active i {
-        text-shadow: #05FF1E 1px 1px 3px, -1px -1px 3px;
+        text-shadow: #05FF1E 0.1rem 0.1rem 0.3rem, -0.1rem -0.1rem 0.3rem;
     }
     .icon-holder:active~.cube-link {
         font-weight: 600;
@@ -788,7 +790,7 @@ h2 {
     
 } 
 .line hr {
-    border-top: 3px solid #2e0066;
+    border-top: 0.3rem solid #2e0066;
     width: 75%;
     margin: -4.8rem auto 4rem;
 }
