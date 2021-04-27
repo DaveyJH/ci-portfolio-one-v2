@@ -28,6 +28,6 @@ Dark Mode
 ![Desktop Home Dark](./images/wireframes/desktop-home-dark.png)
 
 
-[Download Files](../downloads/downloads.md#Home-Page-Design)
+[Download Files](./downloads.md#Home-Page-Design)
 
 [Return To Main](../../../README.md#initial-concept)
