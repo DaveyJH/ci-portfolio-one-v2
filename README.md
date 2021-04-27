@@ -32,6 +32,9 @@ The surface design should draw attention to calls to action, be of a professiona
 <!-- location for ease of use when working. relocate at the end of the project -->
 ## Bug List
 <!-- - WHEN HOVERING ALONG THE SAME HORIZONTAL AS THE PDF ICON AND WITHIN THE WIDTH OF THE RUBIKS IMAGE, THE TAG-LINE TEXT IS CHANGING. THIS GIVES A BAD UX AND NEEDS RECTIFYING *relative position of icon holder* -->
+- Dark mode scroll prompt backrgound-color to be removed
+- Scroll prompt hover border to be removed
+- Appearance is wrong small tablets when landscape. Do I need to re-work the layout for some devices?
 ## To Do List
 - **Should @keyframes be in main css, not in media query?**
 - ***Desktop and tablet checks and changes***
@@ -117,6 +120,8 @@ In addition, you may also use this section to discuss plans for additional featu
     - [Possible option without having to create my own form](https://stackoverflow.com/questions/17937414/send-email-from-html-form-without-php) 
     
         - *Have read somewhere it is advised not to have e-mail address exposed in HTML document so needs further research*
+
+- 
 #
 ## Technologies Used
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
