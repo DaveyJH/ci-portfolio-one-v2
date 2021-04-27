@@ -15,3 +15,5 @@ node_modules/
 
 # ignore WIP folder
 WIP/
+# ignore test files
+*test-*
