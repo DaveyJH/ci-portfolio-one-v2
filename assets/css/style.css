@@ -376,7 +376,7 @@ h2 {
     text-align: center;
     line-height: 3rem;
     color: #5100b5; */
-    animation: scroll-grow 2.1s ease-in-out 2s both;
+    animation: scroll-grow 2.1s ease 2s both;
 }
 #scroll-prompt:hover {
     border: 0.5rem solid #2e0066;
@@ -806,6 +806,73 @@ h2 {
         color: #05FF1E;
         text-shadow: #000000 0.2rem 0.2rem;
         background-color: #394f49CC;
+    }
+}
+/* landscape settings test */
+@media screen and (max-height: 800px) and (max-width: 800px) and (orientation: landscape) {
+    #home-page {
+        display: grid;
+        grid-template-rows: 94vh 5.9vh;
+        grid-template-columns: 3.5vw 39.5vw 47.5vw 5.9vw 3.5vw;
+        grid-template-areas: ". title rubiks . ." ". scroll scroll scroll .";
+    }
+    #top {
+        grid-area: title;
+    }
+    #mid {
+        grid-area: rubiks;
+        /* wish I had learned the capabilities of transform and grid a lot sooner! */
+        transform: scale(0.7);
+        margin-top: -10%;;
+    }
+    #scroll-container {
+        grid-area: scroll;
+    }
+    #hologram-effect-container {
+        visibility: hidden;
+        width: 0rem;
+    }
+
+}
+@media screen and (orientation: landscape) and (min-width: 801px) and (max-width: 1020px) {
+    #home-page {
+        display: grid;
+        grid-template-rows: 94vh 5.9vh;
+        grid-template-columns: 3.5vw 39.5vw 47.5vw 5.9vw 3.5vw;
+        grid-template-areas: ". title rubiks . ." ". scroll scroll scroll .";
+    }
+    #top {
+        grid-area: title;
+    }
+    #mid {
+        grid-area: rubiks;
+        /* wish I had learned the capabilities of transform and grid a lot sooner! */
+        transform: scale(0.7);
+        margin-top: -10%;;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    p[id$="tag-"] {
+        font-size: 1.4rem;
+    }
+    #scroll-container {
+        grid-area: scroll;
+    }
+    #hologram-effect-container {
+        visibility: hidden;
+        width: 0rem;
+    }
+    .cube-link.upper, .cube-link.lower {
+        animation-name: grow-big;
+    }
+    @keyframes grow-big {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1.5);
+        }
     }
 }
 
