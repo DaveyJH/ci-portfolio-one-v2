@@ -6,7 +6,7 @@
 }
 /* allow thick red focus border for accessibility, only visible when tabbing by keyboard. do i need to conider other accessibility methods? */
 *:focus:focus-visible {
-    outline: #EC1C24 outset 1rem;
+    outline: #EC1C24 outset 0.3rem;
 }
 /* font-size setting means rem*10=px */
 html {
@@ -21,6 +21,25 @@ a {
     text-decoration: none;
     color: inherit;
 }
+/* nav menu */
+nav{
+    position: fixed;
+    z-index: 2;
+}
+nav li:hover {
+    cursor: pointer;
+}
+nav li ul {
+    visibility: hidden;
+    display: none;
+}
+/* need to check if this will work with mobile, does it need active pseudo class */
+nav li:hover, nav li:hover ul, nav li ul:hover {
+    visibility: visible;
+    display: block;
+    background-color: white;
+}
+
 
 /* first page */
 #home-page {
