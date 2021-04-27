@@ -143,7 +143,7 @@ h2 {
     width: 2rem;
     height: 1.047rem;
     border-radius: 50%;
-    animation: holo-port-anim 0.8s steps(40, jump-both) 0.6s forwards;
+    animation: holo-port-anim 0.8s ease-out 0.6s forwards;
     box-sizing: border-box;
 }
 /* creat holo-animation */
@@ -151,10 +151,12 @@ h2 {
     from {
         background-color: #394F49DD;
         border: 1px #333333EE solid;
+        transform: scale(0.4);
     }
         to {
         background-color: #111111EE;
         border: none;
+        transform: scale(1);
     }
 }
 @keyframes holo-shimmer {
