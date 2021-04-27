@@ -33,6 +33,7 @@ The surface design should draw attention to calls to action, be of a professiona
 ## Bug List
 <!-- - WHEN HOVERING ALONG THE SAME HORIZONTAL AS THE PDF ICON AND WITHIN THE WIDTH OF THE RUBIKS IMAGE, THE TAG-LINE TEXT IS CHANGING. THIS GIVES A BAD UX AND NEEDS RECTIFYING *relative position of icon holder* -->
 ## To Do List
+- **Should @keyframes be in main css, not in media query?**
 - ***Desktop and tablet checks and changes***
 - **Check media break points**
 - *scroll section*

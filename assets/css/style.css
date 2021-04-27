@@ -50,7 +50,10 @@ a {
 set height at which rubiks-home appears
  */
 #top {
-    height: 26rem;
+    height: max(26rem, calc(42vh - 11.25rem));
+}
+#mid {
+    margin-top: max(0rem, calc(20vh - 11.25rem));
 }
 
 /* header */
@@ -66,8 +69,8 @@ header {
 h1 {
     color: #13D705;
     letter-spacing: 0.22rem;
-    margin-top: 3.7rem;
-    margin-bottom: 2.05rem;
+    margin-top: max(3.7rem, calc(17vh - 11.25rem));
+    margin-bottom: max(2.05rem, calc(15vh - 11.25rem));
     text-align: center;
     font-size: 4.95rem;
     text-shadow: #2E0066 0.2rem 0.2rem 0.4rem;
@@ -76,7 +79,7 @@ h2 {
     color: #2e0066;
     text-align: center;
     letter-spacing: 0.165rem;
-    margin-bottom: 1.65rem;
+    margin-bottom: max(1.65rem, 11vh - 10rem);
 }
 /* hologram text on homepage */
 #hologram-text {
@@ -360,9 +363,11 @@ h2 {
     width: 100%;
     height: 3.2rem;
     display: flex;
+    position: relative;
+    top: max(0rem, calc(39vh - 29.25rem));
 }
 #scroll-prompt {
-    background-color: #13d705;
+    /* background-color: #13d705;
     margin: -1.4rem auto;
     width: 3rem;
     height: 3rem;
@@ -370,7 +375,7 @@ h2 {
     border-radius: 50%;
     text-align: center;
     line-height: 3rem;
-    color: #5100b5;
+    color: #5100b5; */
     animation: scroll-grow 2.1s ease-in-out 2s both;
 }
 #scroll-prompt:hover {
@@ -401,13 +406,19 @@ h2 {
 @keyframes scroll-grow {
     from {
         transform: scale(0.8);
+        position: relative;
+        top: 0rem;
     }
     to {
         transform: scale(1.3);
+        position: relative;
+        top: -1.6rem;
     }
 }
 
 /* media queries */
+/* @media screen and (max-width: 321px) - rubiks home image takes up 320 px on smaller screens - white space appears on the right hand side. At this stage, I have no concern about this as screens with width less than 320px appear to be for specific uses and unlikely to be internet browsing
+*/
 /* position changes for small screens */
 @media screen and (max-width: 400px) {
     html {
@@ -418,6 +429,9 @@ h2 {
     }
     h2 {
         margin: 0 auto;
+    }
+    #hologram-text p:nth-child(2) {
+        margin-top: 1rem;
     }
     #rubiks-home {
         margin-top: 3.6rem;
@@ -434,7 +448,7 @@ h2 {
     }
 }
 /* cv line animation change for small-mid-size screen */
-@media screen and (max-width: 549px) {
+@media screen and (min-width: 401px) and (max-width: 549px) {
     @keyframes cv-flat-grow {
         from {
             background-size: max(calc(0vw - 0rem), 0rem) 0rem;
@@ -478,9 +492,9 @@ h2 {
     html {
         font-size: min(1.4vw, 77.6%);
     }
-    #top {
+    /* #top {
         height: 25rem;
-    }
+    } */
     /* link positioning */
     .link {
         visibility: visible;
