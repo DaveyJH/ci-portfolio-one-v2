@@ -1,15 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Orbitron&family=Turret+Road&family=Zen+Dots&display=swap');
+
 body {
     padding: 15% 25%;
     font-size: 200%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:"Orbitron", Verdana, Geneva, Tahoma, sans-serif;
     color: #1421DA;
     background-color: #FF7F27;
+    text-align: center;
+}
+a {
+    color: #FFF200;
 }
 
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #323031;
         color: #EC368D;
+    }
+    a {
+        color: #08FBE7;
+    }
+    hr {
+        border:none;
+        box-sizing: border-box;
+        border-top: 0.3rem solid #F45A00; 
     }
 }
 
