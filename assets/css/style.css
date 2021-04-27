@@ -582,7 +582,7 @@ h2 {
             background-size: max(calc(0vw - 0rem), 0rem) 10rem;
         }
         to {
-            background-size: max(calc(32vw - 32rem), 10rem) 10rem;
+            background-size: max(calc(31.5vw - 26rem), 9rem) 10rem;
         }
         
     }

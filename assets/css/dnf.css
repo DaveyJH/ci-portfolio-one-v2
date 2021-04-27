@@ -11,6 +11,11 @@ body {
 a {
     color: #FFF200;
 }
+hr {
+    border:none;
+    box-sizing: border-box;
+    border-top: 0.3rem solid #F45A00; 
+}
 
 @media (prefers-color-scheme: dark) {
     body {
