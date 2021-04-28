@@ -25,7 +25,7 @@ a {
 /* nav menu */
 nav{
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 2.5rem;
     left: 1rem;
     font-size: 3rem;
@@ -83,6 +83,15 @@ nav li:hover, nav li:hover>ul, nav li ul:hover, nav li:hover ul li {
     width: 24.3rem;
     line-height: 5rem;
 }
+.shadow.first-menu {
+    height: 31rem;
+    width: 24.3rem;
+    position: absolute;
+    top: -25rem;
+    border-radius: 0.8rem;
+    z-index: 0;
+    box-shadow: 0.3rem 0.3rem 0.3rem red;
+}
 /* nav menu focus settings - seperate from hove settings due to ie11 */
 nav li:focus-within, nav li:focus-within>ul, nav li ul:focus-within, nav li:focus-within ul li {
     visibility: visible;
@@ -139,6 +148,8 @@ nav li:focus-within li .sub-menu {
     background-color: #13D705;
 }
 .sub-menu:first-child {
+    position: relative;
+    z-index: 3;
     padding-top: 0.5rem;
     border-top-right-radius: 0.8rem;
     border-top-left-radius: 0.3rem;
