@@ -78,6 +78,18 @@ nav *:hover span {
 nav *:focus-within span {
     color: #EC1C24;
     visibility: visible;
+    display: inline;
+}
+.shadow.first-menu {
+    height: 31rem;
+    width: 24.3rem;
+    position: absolute;
+    top: -25rem;
+    /* left: -0.1rem; */
+    border-radius: 0.8rem;
+    z-index: -1;
+    background-color: #FF7F27;
+    box-shadow: 0.3rem 0.3rem 0.3rem #EC1C24;
 }
 /* nav menu hover settings */
 nav li:hover, nav li:hover>ul, nav li ul:hover, nav li:hover ul li {
@@ -87,15 +99,6 @@ nav li:hover, nav li:hover>ul, nav li ul:hover, nav li:hover ul li {
     height: 5rem;
     width: 24.3rem;
     line-height: 5rem;
-}
-.shadow.first-menu {
-    height: 31rem;
-    width: 24.3rem;
-    position: absolute;
-    top: -25rem;
-    border-radius: 0.8rem;
-    z-index: 0;
-    box-shadow: 0.3rem 0.3rem 0.3rem red;
 }
 /* nav menu focus settings - seperate from hove settings due to ie11 */
 nav li:focus-within, nav li:focus-within>ul, nav li ul:focus-within, nav li:focus-within ul li {
@@ -150,6 +153,7 @@ nav li:focus-within li .sub-menu {
     display: block;
     background-color: #13D705;
 }
+/* shadow for sub-menu */
 .page.cv ul div {
     background-color: #13D705;
     position: relative;
@@ -159,13 +163,14 @@ nav li:focus-within li .sub-menu {
     border-top-left-radius: 0.3rem;
     box-shadow: 0.3rem 0.3rem 0.3rem #1421DA;
 }
+.page.cv ul div li {
+    background-color: #13D705;
+}
 .sub-menu {
     position: relative;
     z-index: 3;
 }
 .sub-menu:first-child {
-    position: relative;
-    z-index: 3;
     padding-top: 0.5rem;
     border-top-right-radius: 0.8rem;
     border-top-left-radius: 0.3rem;
