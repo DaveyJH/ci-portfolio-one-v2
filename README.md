@@ -20,6 +20,10 @@
 - [Deployment](#Deployment)
 - [Inspiration](#Inspiration)
 - [Continued Development](#Continued-Development)
+- [Credits](#Credits)
+    - [Content](#Content)
+    - [Media](#Media)
+    - [Acknowledgements](#Acknowledgements)
 - [Downloads](#Downloads)
 
 
@@ -184,7 +188,7 @@ As my first project with a real practical application, I am hoping to keep notes
 *First credits must be given to the developers responsible for the content above.  Their websites gave some real insight into how I could develop my own creative ideas. After viewing their sites, I took myself back in the development/design stage to get a better initial concept of how I wanted my final product to look*
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- The main structure for the nav-menu is based on some tips from [CSS Tricks](https://css-tricks.com/solved-with-css-dropdown-menus/)
 - **Tabindex** - The focus border was not very visible when tabbing through elements. I have removed the tab option from the icons as it confused the navigation of the site. From what I can work out, the way in which I have done this should not affect the overall function of the site
     - [Stack Overflow](https://stackoverflow.com/questions/54087544/how-to-have-a-css-outline-on-a-button-tag-only-by-tab-but-not-on-click/54087710) *for info*
         - Credit [kimbaudi](https://stackoverflow.com/users/1097123/kimbaudi)
@@ -194,5 +198,6 @@ As my first project with a real practical application, I am hoping to keep notes
 ### Acknowledgements
 - I received inspiration for this project from X
 
-### Downloads
+
+## Downloads
 [Downloadable Files](/assets/files/downloads/downloads.md#Downloadable-Files)

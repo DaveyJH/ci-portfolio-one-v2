@@ -214,6 +214,7 @@ h2 {
     padding: 0 2rem;
     color: #5100B5;
     grid-area: tag-lines;
+    letter-spacing: 0.02rem;
 }
 .tag-line.right {
     text-align: right;
@@ -256,6 +257,9 @@ h2 {
     border-radius: 0.6rem;
     line-height: 2.7rem;
     border: 0.2rem ridge #2E0066;
+}
+.scroll i:hover {
+    background-color: #13D705;
 }
 
 
