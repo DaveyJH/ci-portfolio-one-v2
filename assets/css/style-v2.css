@@ -21,24 +21,101 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+
+
 /* nav menu */
 nav{
     position: fixed;
     z-index: 2;
+    top: 2rem;
+    left: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    font-variant: small-caps;
+    letter-spacing: 0.15rem;
+    color: #1421DA;
+}
+nav span {
+    visibility: hidden;
+    margin-left: -1rem;
+}
+nav i {
+    font-size: smaller;
+    width: 5rem;
+    text-align: center;
+    margin-left: 1rem;
+    color: #EC1C24;
+}
+nav li {
+    list-style-type: none;
 }
 nav li:hover {
     cursor: pointer;
+}
+nav *:hover span {
+    color: #EC1C24;
+    visibility: visible;
 }
 nav li ul {
     visibility: hidden;
     display: none;
 }
-/* need to check if this will work with mobile, does it need active pseudo class */
-nav li:hover, nav li:hover ul, nav li ul:hover {
+#burger {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+#burger>i {
+    font-size: 3rem;
+    color: #1421DA;
+}
+/* tested on android device in mockup html file, working ok */
+nav li:hover, nav li:hover>ul, nav li ul:hover, nav li:hover ul li {
     visibility: visible;
     display: block;
-    background-color: white;
+    background-color: #FF7F27;
+    height: 5rem;
+    width: 24.2rem;
+    line-height: 5rem;
 }
+nav li:hover .sub-menu {
+    visibility: hidden;
+    display: none;
+    background-color: none;
+    font-size: smaller;
+    margin-left: 5rem;
+    padding-left: 2.5rem;
+}
+.page.cv {
+    position: relative;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    padding-bottom: 1rem;
+}
+.page.cv:hover {
+    border-bottom-right-radius: 0.3rem;
+}
+.page.cv:hover ul {
+    background-color: initial;
+}
+.page.cv:hover .sub-menu {
+    visibility: visible;
+    display: block;
+    background-color: #13D705;
+}
+.sub-menu:first-child {
+    padding-top: 0.5rem;
+    border-top-right-radius: 0.8rem;
+    border-top-left-radius: 0.3rem;
+}
+.sub-menu:last-child {
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+
+
+
 
 
 /* first page */
@@ -64,6 +141,7 @@ h2 {
     color: #5100B5;
 }
 
+/* rubiks image */
 #rubiks>div>button {
     height: 2.5rem;
     color: #42bfdd;
