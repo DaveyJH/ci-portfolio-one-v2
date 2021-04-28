@@ -27,7 +27,7 @@ nav{
     position: fixed;
     z-index: 1;
     top: 2.5rem;
-    left: 2rem;
+    left: 1rem;
     font-size: 3rem;
     font-weight: 600;
     font-variant: small-caps;
@@ -43,7 +43,7 @@ nav i {
     font-size: smaller;
     width: 5rem;
     text-align: center;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     color: #EC1C24;
 }
 nav li {
@@ -56,6 +56,14 @@ nav li ul {
 nav li:hover {
     cursor: pointer;
 }
+#burger {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+#burger>i {
+    font-size: 3rem;
+    color: #1421DA;
+}
 /* navigation text appear */
 nav *:hover span {
     color: #EC1C24;
@@ -66,21 +74,13 @@ nav *:focus-within span {
     color: #EC1C24;
     visibility: visible;
 }
-#burger {
-    border-top-left-radius: 0.8rem;
-    border-top-right-radius: 0.8rem;
-}
-#burger>i {
-    font-size: 3rem;
-    color: #1421DA;
-}
 /* nav menu hover settings */
 nav li:hover, nav li:hover>ul, nav li ul:hover, nav li:hover ul li {
     visibility: visible;
     display: block;
     background-color: #FF7F27;
     height: 5rem;
-    width: 24.8rem;
+    width: 24.3rem;
     line-height: 5rem;
 }
 /* nav menu focus settings - seperate from hove settings due to ie11 */
@@ -152,43 +152,45 @@ nav li:focus-within li .sub-menu {
 
 /* first page */
 #home-page {
-    background-color: #fff200c0;
+    background-color: #FFF200C0;
     position: relative;
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 14.69% 3.48% 8.25% 59.45% 12.11%;
+    grid-template-rows: 8.8rem 7rem 6.1rem 38rem 4rem;
     grid-template-areas: "title" "h2" "tag-lines" "rubiks-cube" "scroll";
 }
-header {
-    grid-area: title;
-}
 h1, h2 {
-    font-family: "Zen Dots", Impact, fantasy;
+    text-align: center;
 }
 h1 {
+    font-family: "Zen Dots", Impact, fantasy;
     color: #13D705;
     letter-spacing: 0.22rem;
     text-align: center;
-    font-size: 4.95rem;
-    text-shadow: #2E0066 0.2rem 0.2rem 0.4rem;
+    font-size: 4.5rem;
+    text-shadow: 0.2rem 0.2rem 0.4rem #2E0066 ;
+    margin-left: 3rem;
+    margin-top: 1.7rem;
+    grid-area: title;
 }
 h2 {
     color: #2E0066;
     grid-area: h2;
 }
 .tag-line {
+    padding: 0 2rem;
     color: #5100B5;
     grid-area: tag-lines;
 }
+.tag-line.right {
+    text-align: right;
+    position: relative;
+    top: 2rem;
+}
+/* rubiks image */
 .rubiks {
     grid-area: rubiks-cube;
 }
-.scroll {
-    grid-area: scroll;
-}
-
-
-/* rubiks image */
 .rubiks>div>button {
     height: 2.5rem;
     color: #42bfdd;
@@ -201,6 +203,26 @@ h2 {
     width: 13rem;
     text-transform: capitalize;
     font-family: "Orbitron", Verdana, sans-serif;
+}
+
+/* scroll-prompt */
+.scroll {
+    padding: 0 5rem;
+    grid-area: scroll;
+    display: flex;
+    align-items: center;
+}
+.scroll hr {
+    border-top: 0.2rem ridge #2E0066;
+    flex-grow: 1;
+}
+.scroll i {
+    padding: 0 4.5rem;
+    color: #2E0066;
+    font-size: 3rem;
+    border-radius: 0.6rem;
+    line-height: 2.7rem;
+    border: 0.2rem ridge #2E0066;
 }
 
 
