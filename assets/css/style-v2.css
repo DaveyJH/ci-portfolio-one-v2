@@ -32,7 +32,7 @@ nav{
     position: fixed;
     z-index: 2;
     top: 2.5rem;
-    left: 1rem;
+    left: 0.75rem;
     font-size: 3rem;
     font-weight: 600;
     font-variant: small-caps;
@@ -224,7 +224,42 @@ h2 {
 /* rubiks image */
 .rubiks {
     grid-area: rubiks-cube;
+    background: url(../images/rubiks-color-1.png) no-repeat center center;
+    background-size: contain;
+    position: relative;
 }
+
+.holo-effect * {
+    position: absolute;
+    margin-left: 50%;
+}
+#shimmer {
+    top: -0.7rem;
+    left: -7.1rem;
+    z-index: 10;
+    width: 14rem;
+    height: 12rem;
+    background: url(../images/holo-thick2.png) no-repeat center center;
+    background-size: 14rem 12rem;
+}
+.port {
+    top: 10rem;
+    left: -2.1rem;
+    width: 4rem;
+    height: 2.3rem;
+    background-color: #394F4999;
+    border-radius: 50%;
+}
+#port-hole {
+    left: -1rem;
+    top: 0.45rem;
+    width: 2rem;
+    height: 1.25rem;
+    background-color: #111111CC;
+    border-radius: 50%;
+}
+
+
 .rubiks>div>button {
     height: 2.5rem;
     color: #42bfdd;
