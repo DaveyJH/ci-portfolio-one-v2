@@ -36,6 +36,7 @@ nav{
 }
 nav span {
     visibility: hidden;
+    display: none;
     margin-left: -1rem;
 }
 nav i {
@@ -59,6 +60,7 @@ nav li:hover {
 nav *:hover span {
     color: #EC1C24;
     visibility: visible;
+    display: inline;
 }
 nav *:focus-within span {
     color: #EC1C24;
@@ -153,8 +155,13 @@ nav li:focus-within li .sub-menu {
     background-color: #fff200c0;
     position: relative;
     min-height: 100vh;
+    display: grid;
+    grid-template-rows: 14.69% 3.48% 8.25% 59.45% 12.11%;
+    grid-template-areas: "title" "h2" "tag-lines" "rubiks-cube" "scroll";
 }
-
+header {
+    grid-area: title;
+}
 h1, h2 {
     font-family: "Zen Dots", Impact, fantasy;
 }
@@ -167,13 +174,22 @@ h1 {
 }
 h2 {
     color: #2E0066;
+    grid-area: h2;
 }
 .tag-line {
     color: #5100B5;
+    grid-area: tag-lines;
+}
+.rubiks {
+    grid-area: rubiks-cube;
+}
+.scroll {
+    grid-area: scroll;
 }
 
+
 /* rubiks image */
-#rubiks>div>button {
+.rubiks>div>button {
     height: 2.5rem;
     color: #42bfdd;
     border-radius: 0.5rem;
