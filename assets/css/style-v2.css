@@ -25,8 +25,8 @@ a {
 /* nav menu */
 nav{
     position: fixed;
-    z-index: 2;
-    top: 2rem;
+    z-index: 1;
+    top: 2.5rem;
     left: 2rem;
     font-size: 3rem;
     font-weight: 600;
@@ -48,9 +48,14 @@ nav i {
 nav li {
     list-style-type: none;
 }
+nav li ul {
+    visibility: hidden;
+    display: none;
+}
 nav li:hover {
     cursor: pointer;
 }
+/* navigation text appear */
 nav *:hover span {
     color: #EC1C24;
     visibility: visible;
@@ -58,10 +63,6 @@ nav *:hover span {
 nav *:focus-within span {
     color: #EC1C24;
     visibility: visible;
-}
-nav li ul {
-    visibility: hidden;
-    display: none;
 }
 #burger {
     border-top-left-radius: 0.8rem;
@@ -71,7 +72,7 @@ nav li ul {
     font-size: 3rem;
     color: #1421DA;
 }
-/* tested on android device in mockup html file, working ok */
+/* nav menu hover settings */
 nav li:hover, nav li:hover>ul, nav li ul:hover, nav li:hover ul li {
     visibility: visible;
     display: block;
@@ -80,6 +81,7 @@ nav li:hover, nav li:hover>ul, nav li ul:hover, nav li:hover ul li {
     width: 24.8rem;
     line-height: 5rem;
 }
+/* nav menu focus settings - seperate from hove settings due to ie11 */
 nav li:focus-within, nav li:focus-within>ul, nav li ul:focus-within, nav li:focus-within ul li {
     visibility: visible;
     display: block;
@@ -88,6 +90,7 @@ nav li:focus-within, nav li:focus-within>ul, nav li ul:focus-within, nav li:focu
     width: 24.2rem;
     line-height: 5rem;
 }
+/* sub-menu not visible on main menu hover/focus */
 nav li:hover .sub-menu {
     visibility: hidden;
     display: none;
@@ -104,6 +107,7 @@ nav li:focus-within li .sub-menu {
     margin-left: 5rem;
     padding-left: 2.5rem;
 }
+/* z-index allows focus outline visibility on item above, relative positon for sub-menu positioning */
 .page.cv {
     position: relative;
     border-bottom-left-radius: 0.8rem;
@@ -114,12 +118,14 @@ nav li:focus-within li .sub-menu {
 .page.cv:hover {
     border-bottom-right-radius: 0.3rem;
 }
+/* prevent .sub-menu parent <ul> appearing when hovered/focused */
 .page.cv:hover ul {
     background-color: initial;
 }
 .page.cv:focus-within ul {
     background-color: initial;
 }
+/* display sub-menu */
 .page.cv:hover .sub-menu {
     visibility: visible;
     display: block;
@@ -140,10 +146,7 @@ nav li:focus-within li .sub-menu {
     border-bottom-right-radius: 0.8rem;
     padding-bottom: 0.5rem;
 }
-
-
-
-
+/* end of nav */
 
 /* first page */
 #home-page {
@@ -151,6 +154,7 @@ nav li:focus-within li .sub-menu {
     position: relative;
     min-height: 100vh;
 }
+
 h1, h2 {
     font-family: "Zen Dots", Impact, fantasy;
 }
