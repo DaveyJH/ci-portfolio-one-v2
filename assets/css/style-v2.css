@@ -4,6 +4,11 @@
     margin: 0;
     border: none;
 }
+/* 
+*:focus {
+    outline: none;
+} 
+*/
 /* allow thick red focus border for accessibility, only visible when tabbing by keyboard. do i need to conider other accessibility methods? */
 *:focus:focus-visible {
     outline: #EC1C24 outset 0.3rem;
@@ -107,7 +112,6 @@ nav li:hover .sub-menu {
     display: none;
     background-color: none;
     font-size: smaller;
-    margin-left: 5rem;
     padding-left: 2.5rem;
 }
 nav li:focus-within li .sub-menu {
@@ -115,7 +119,6 @@ nav li:focus-within li .sub-menu {
     display: none;
     background-color: none;
     font-size: smaller;
-    margin-left: 5rem;
     padding-left: 2.5rem;
 }
 /* z-index allows focus outline visibility on item above, relative positon for sub-menu positioning */
@@ -147,6 +150,19 @@ nav li:focus-within li .sub-menu {
     display: block;
     background-color: #13D705;
 }
+.page.cv ul div {
+    background-color: #13D705;
+    position: relative;
+    width: 26.8rem;
+    left: 5rem;
+    border-radius: 0.8rem;
+    border-top-left-radius: 0.3rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem #1421DA;
+}
+.sub-menu {
+    position: relative;
+    z-index: 3;
+}
 .sub-menu:first-child {
     position: relative;
     z-index: 3;
@@ -154,9 +170,10 @@ nav li:focus-within li .sub-menu {
     border-top-right-radius: 0.8rem;
     border-top-left-radius: 0.3rem;
 }
-.sub-menu:last-child {
+.sub-menu:nth-child(2) {
     border-bottom-left-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
+    margin-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 /* end of nav */
