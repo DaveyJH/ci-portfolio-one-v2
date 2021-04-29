@@ -74,9 +74,18 @@ nav li:hover {
 #burger {
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
-    text-shadow: -0.3rem 0.3rem 0.4rem #EC1424;
+    /* text-shadow: -0.3rem 0.3rem 0.4rem #EC1424; */
     font-size: 3rem;
     color: #1421DA;
+    animation: burger-shadow 0.9s 2.5s ease both;
+}
+@keyframes burger-shadow {
+    from {
+        text-shadow: none
+    }
+    to {
+    text-shadow: -0.3rem 0.3rem 0.4rem #EC1424;
+    }
 }
 /* navigation text appear */
 nav *:hover span {
@@ -135,36 +144,36 @@ nav li:focus-within li .sub-menu {
     padding-left: 2.5rem;
 }
 /* z-index allows focus outline visibility on item above, relative positon for sub-menu positioning */
-.page.cv {
+.nav-item.cv {
     position: relative;
     border-bottom-left-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
     padding-bottom: 1rem;
     z-index: -1;
 }
-.page.cv:hover {
+.nav-item.cv:hover {
     border-bottom-right-radius: 0.3rem;
 }
 /* prevent .sub-menu parent <ul> appearing when hovered/focused */
-.page.cv:hover ul {
+.nav-item.cv:hover ul {
     background-color: initial;
 }
-.page.cv:focus-within ul {
+.nav-item.cv:focus-within ul {
     background-color: initial;
 }
 /* display sub-menu */
-.page.cv:hover .sub-menu {
+.nav-item.cv:hover .sub-menu {
     visibility: visible;
     display: block;
     background-color: #13D705;
 }
-.page.cv:focus-within .sub-menu {
+.nav-item.cv:focus-within .sub-menu {
     visibility: visible;
     display: block;
     background-color: #13D705;
 }
 /* shadow for sub-menu */
-.page.cv ul div {
+.nav-item.cv ul div {
     background-color: #13D705;
     position: relative;
     width: 26.8rem;
@@ -173,7 +182,7 @@ nav li:focus-within li .sub-menu {
     border-top-left-radius: 0.8rem;
     box-shadow: 0.1rem 0.1rem 0.3rem, 0.3rem 0.3rem 0.3rem #EC1C24, -0.1rem -0.1rem 0.3rem;
 }
-.page.cv ul div li {
+.nav-item.cv ul div li {
     background-color: #13D705;
 }
 .sub-menu {
@@ -418,14 +427,14 @@ h2 {
 #cv .flat {
     left: 0.5rem;
     bottom: -10.5rem;
-    animation: flat-grow 2s 2.7s ease-out both;
+    animation: flat-grow 2s 4s ease-out both;
 }
 #cv .angle {
     bottom: -5.5rem;
     left: -1rem;
     height: 2.1rem;
     width: 2.1rem;
-    animation: cv-angle-grow 0.5s 2.1s linear both;
+    animation: cv-angle-grow 0.5s 3.4s linear both;
 
 }
 @keyframes flat-grow {
