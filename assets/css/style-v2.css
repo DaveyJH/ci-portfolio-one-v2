@@ -509,6 +509,9 @@ h2 {
         top: 23.9rem;
         transform: scale(0.8);
     }
+    .cube-link button:active {
+        line-height: 1.6em;
+    }
     /* left side */
     h1 {
         font-size: 2.25em;
@@ -518,21 +521,46 @@ h2 {
         font-size: 1.5em;
     }
     /* tag lines */
+    .tag-cube-container {
+        position: relative;
+    }
     .cube {
         height: 3.125em;
         width: 2.5em;
         background-color: #2E0066;
         border-radius: 0.8rem;
+        position: relative;
+        animation: cube-float 1.2s 1s ease-out both;
     }
     .cube-shadow {
         background-color: #394F49CC;
         height: 1em;
-        width: 2.3em;
+        width: 1.8em;
         border-radius: 25%;
-        position: relative;
+        position: absolute;
         top: 2.4em;
-        left: 0.1em;
+        left: 0.35em;
         z-index: -1;
+        animation: cube-shadow-grow 1.2s 1.3s ease-out both;
+    }
+
+    @keyframes cube-shadow-grow {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+    @keyframes cube-float {
+        from {
+            transform: scale(0);
+            top: 2em;
+        }
+        to {
+            top: 0em;
+            transform: scale(1);
+        }
     }
     .tag-line {
         font-size: 1.09em;
@@ -556,11 +584,15 @@ h2 {
         text-align: center;
         flex-direction: row-reverse;
     }
-    .cube.blue {
+    .blue .cube{
         background: url(../images/blue-cube.png) no-repeat center center;
         background-size: contain;
+        animation-delay: 1.5s;
     }
-    .cube.red {
+    .blue .cube-shadow {
+        animation-delay: 1.8s;
+    }
+    .red .cube {
         background: url(../images/red-cube.png) no-repeat center center;
         background-size: contain;
     }
