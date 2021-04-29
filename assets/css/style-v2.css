@@ -4,13 +4,10 @@
     margin: 0;
     border: none;
 }
-/* 
-!check this
-*/
+/* !check this */
 *:focus {
     outline: none;
 } 
-
 /* allow thick red focus border for accessibility, only visible when tabbing by keyboard. do i need to conider other accessibility methods? */
 *:focus:focus-visible {
     outline: #EC1C24 outset 0.3rem;
@@ -202,7 +199,7 @@ nav li:focus-within li .sub-menu {
 #home-page {
     background-color: #FFF200C0;
     position: relative;
-    min-height: 100vh;
+    padding-bottom: 0.1rem;
     display: grid;
     grid-template-rows: 8.8rem 7rem 6.1rem 38rem 4rem;
     grid-template-areas: "title" "h2" "tag-lines" "rubiks-cube" "scroll";
@@ -490,11 +487,11 @@ h2 {
 /* landscape small screens */
 @media screen and (orientation: landscape) {
     #home-page {
-        /* background-color: #EC1424; */
         grid-template-rows: 8.9rem 5.9rem 6.8rem 6.8rem 3.5rem;
         grid-template-columns: 34rem 30rem;
         grid-template-areas: "title rubiks-cube" "h2 rubiks-cube" "tag-left rubiks-cube" "tag-right rubiks-cube" "scroll scroll";
         padding-top: 1em;
+        padding-bottom: 1.55em;
     }
     /* rubiks cube */
     .rubiks {
@@ -527,6 +524,16 @@ h2 {
         background-color: #2E0066;
         border-radius: 0.8rem;
     }
+    .cube-shadow {
+        background-color: #394F49CC;
+        height: 1em;
+        width: 2.3em;
+        border-radius: 25%;
+        position: relative;
+        top: 2.4em;
+        left: 0.1em;
+        z-index: -1;
+    }
     .tag-line {
         font-size: 1.09em;
         grid-area: initial;
@@ -539,14 +546,12 @@ h2 {
     .tag-line p {
         line-height: 1.5625em;
         width: 13.75em;
-        /* font-weight: 600; */
     }
     .tag-line.left {
         grid-area: tag-left;
     }
     .tag-line.right {
-        margin-top: -3em;
-        left: -2rem;
+        margin-top: -2em;
         grid-area: tag-right;
         text-align: center;
         flex-direction: row-reverse;
@@ -571,7 +576,9 @@ h2 {
     .sub-menu:first-of-type {
         padding-top: 0;
     }
-
+    .scroll {
+        margin-top: 2em;
+    }
 }
 
 /* 
@@ -580,7 +587,7 @@ h2 {
     background-color: green;
 }
 }
-@media screen and (max-height: 320px) {
+@media screen and (max-height: 360px) {
     #home-page {
         background-color: #5500B5;
     }
