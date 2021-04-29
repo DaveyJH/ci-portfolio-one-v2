@@ -91,7 +91,7 @@ nav *:focus-within span {
     border-radius: 0.8rem;
     z-index: -1;
     background-color: #FF7F27;
-    box-shadow: 0.3rem 0.3rem 0.3rem #EC1C24;
+    box-shadow: 0.3rem 0.3rem 0.3rem #1421DA;
 }
 /* nav menu hover settings */
 nav li:hover, nav li:hover>ul, nav li ul:hover, nav li:hover ul li {
@@ -163,7 +163,7 @@ nav li:focus-within li .sub-menu {
     left: 5rem;
     border-radius: 0.8rem;
     border-top-left-radius: 0.3rem;
-    box-shadow: 0.3rem 0.3rem 0.3rem #1421DA;
+    box-shadow: 0.3rem 0.3rem 0.3rem #EC1C24;
 }
 .page.cv ul div li {
     background-color: #13D705;
