@@ -219,11 +219,21 @@ h2 {
     color: #5100B5;
     grid-area: tag-lines;
     letter-spacing: 0.02rem;
+    animation: tag-line-appear 3.5s 1.4s both;
 }
 .tag-line.right {
     text-align: right;
     position: relative;
     top: 2rem;
+    animation-delay: 1.9s;
+}
+@keyframes tag-line-appear {
+    from {
+        color: #FFF53F;
+    }
+    to {
+        color: #5100B5;
+    }
 }
 /* rubiks image */
 .rubiks {
@@ -231,20 +241,21 @@ h2 {
     background: url(../images/rubiks-color-1.png) no-repeat center center;
     background-size: contain;
     position: relative;
+    animation: grow-to-normal 0.6s ease-out both;
 }
-
 .holo-effect * {
     position: absolute;
     margin-left: 50%;
 }
 #shimmer {
-    top: -0.7rem;
-    left: -7.1rem;
+    top: -1rem;
+    left: -13.6rem;
     z-index: 1;
-    width: 14rem;
+    width: 27rem;
     height: 12rem;
     background: url(../images/holo-thick2.png) no-repeat center center;
     background-size: 14rem 12rem;
+    animation: holo-shimmer 0.6s 1s both;
 }
 .port {
     top: 10rem;
@@ -260,7 +271,58 @@ h2 {
     width: 2rem;
     height: 1.25rem;
     background-color: #111111CC;
+    box-sizing: border-box;
     border-radius: 50%;
+    border: 0.3rem dashed #394F4999;
+    animation: port-grow 0.8s 0.8s both;
+}
+/* rubiks animations */
+@keyframes grow-to-normal {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+@keyframes holo-shimmer {
+    from {
+        width: 0rem;
+        left: 0rem;
+    }
+    25% {
+        background: none;
+    }
+    32%{
+        background: url(../images/holo-thin.png) no-repeat center center;
+    }
+    46% {
+        background: none;
+    }
+    58%{
+        background: url(../images/holo-thin.png) no-repeat center center;
+    }
+    74% {
+        background: none;
+    }
+    81%{
+        background: url(../images/holo-thick2.png) no-repeat center center;
+    }
+    to {
+        width:27rem;
+        background: url(../images/holo-thick2.png) no-repeat center center;
+        left: -13.6rem;
+        border-top-left-radius: 25%;
+        border-top-right-radius: 25%;
+    }
+}
+@keyframes port-grow {
+    from {
+        background-color: #394F4999;
+    }
+    to {
+        background-color: #111111CC;
+    }
 }
 
 /* cube link styling */
