@@ -34,7 +34,7 @@ button:hover {
 /* nav menu */
 nav{
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     top: 2.5rem;
     left: 2rem;
     font-size: 3rem;
@@ -42,6 +42,7 @@ nav{
     font-variant: small-caps;
     letter-spacing: 0.15rem;
     color: #1421DA;
+    opacity: 0.99;
 }
 nav span {
     visibility: hidden;
@@ -74,7 +75,6 @@ nav li:hover {
 #burger {
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
-    /* text-shadow: -0.3rem 0.3rem 0.4rem #EC1424; */
     font-size: 3rem;
     color: #1421DA;
     animation: burger-shadow 0.9s 2.5s ease both;
@@ -104,7 +104,6 @@ nav *:focus-within span {
     width: 24.3rem;
     position: absolute;
     top: -25rem;
-    /* left: -0.1rem; */
     border-radius: 0.8rem;
     z-index: -1;
     background-color: #FF7F27;
@@ -143,13 +142,11 @@ nav li:focus-within li .sub-menu {
     font-size: smaller;
     padding-left: 2.5rem;
 }
-/* z-index allows focus outline visibility on item above, relative positon for sub-menu positioning */
 .nav-item.cv {
     position: relative;
     border-bottom-left-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
     padding-bottom: 1rem;
-    z-index: -1;
 }
 .nav-item.cv:hover {
     border-bottom-right-radius: 0.3rem;
@@ -187,7 +184,6 @@ nav li:focus-within li .sub-menu {
 }
 .sub-menu {
     position: relative;
-    z-index: 3;
 }
 .sub-menu:first-child {
     padding-top: 0.5rem;
@@ -480,7 +476,6 @@ h2 {
 }
 .scroll button {
     position: relative;
-    z-index: 1;
     margin: 0 3rem;
     width: 7.5rem;
     height: 3rem;
@@ -499,6 +494,7 @@ h2 {
         grid-template-rows: 8.9rem 5.9rem 6.8rem 6.8rem 3.5rem;
         grid-template-columns: 34rem 30rem;
         grid-template-areas: "title rubiks-cube" "h2 rubiks-cube" "tag-left rubiks-cube" "tag-right rubiks-cube" "scroll scroll";
+        padding-top: 1em;
     }
     /* rubiks cube */
     .rubiks {
@@ -532,7 +528,7 @@ h2 {
         border-radius: 0.8rem;
     }
     .tag-line {
-        font-size: 1em;
+        font-size: 1.09em;
         grid-area: initial;
         line-height: 4.25em;
         display: flex;
@@ -543,6 +539,7 @@ h2 {
     .tag-line p {
         line-height: 1.5625em;
         width: 13.75em;
+        /* font-weight: 600; */
     }
     .tag-line.left {
         grid-area: tag-left;
@@ -562,9 +559,23 @@ h2 {
         background: url(../images/red-cube.png) no-repeat center center;
         background-size: contain;
     }
+    /* nav changes */
+    #cv-menu-arrow {
+        transform: rotate(270deg);
+        text-shadow: -0.1rem 0.1rem 0.3rem #1421DA;
+    }
+    #sub-menu-all {
+        left: 7.5em;
+        top: -4em;
+    }
+    .sub-menu:first-of-type {
+        padding-top: 0;
+    }
+
 }
 
-/* @media screen and (max-width: 640px) {
+/* 
+@media screen and (max-width: 640px) {
 #home-page {
     background-color: green;
 }
@@ -573,4 +584,5 @@ h2 {
     #home-page {
         background-color: #5500B5;
     }
-    } */
+    } 
+*/
