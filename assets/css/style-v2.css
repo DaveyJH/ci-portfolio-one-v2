@@ -281,11 +281,29 @@ h2 {
     width: 100%;
     position: relative;
 }
+.cube-link button:hover {
+    font-weight: 600;
+    text-shadow: 0.1rem 0.1rem 0.2rem #000000;
+    background-color: #394F49;
+}
+.cube-link button:active {
+    font-weight: 600;
+    color: #13D705;
+    background-color: #394F49;
+    text-shadow: 0.1rem 0.1rem 0.2rem #13D705;
+}
 .icon i {
     font-size: 2.8rem;
     color: #394F49;
     position:absolute;
     margin-left: 50%;
+    text-shadow: 0.1rem 0.1rem 0.3rem #42BFDD;
+}
+.icon i:hover {
+    text-shadow: 0.1rem 0.1rem 0.3rem #5500B5;
+}
+.icon i:active {
+    text-shadow: 0.1rem 0.1rem 0.3rem #13D705;
 }
 .cube-link button {
     position: absolute;
