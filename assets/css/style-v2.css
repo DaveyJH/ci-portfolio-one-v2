@@ -220,11 +220,13 @@ h1 {
     grid-area: title;
 }
 h2 {
+    padding: 0 3rem;
     color: #2E0066;
     grid-area: h2;
 }
 .tag-line {
-    padding: 0 2rem;
+    margin-left: auto;
+    margin-right: auto;
     color: #5100B5;
     grid-area: tag-lines;
     letter-spacing: 0.02rem;
@@ -259,6 +261,8 @@ h2 {
     border-radius: 0.8rem;
     position: relative;
     animation: grow-to-normal 0.6s ease-out both;
+    margin-left: auto;
+    margin-right: auto;
 }
 .holo-effect * {
     position: absolute;
@@ -269,10 +273,11 @@ h2 {
     left: -13.6rem;
     z-index: 1;
     width: 27rem;
-    height: 12rem;
+    height: 11rem;
     background: url(../images/holo-thick2.png) no-repeat center center;
     background-size: 14rem 12rem;
     animation: holo-shimmer 0.6s 1s both;
+    top: 0rem;
 }
 .port {
     top: 10rem;
