@@ -47,6 +47,7 @@ nav span {
     visibility: hidden;
     display: none;
     margin-left: -1rem;
+    text-shadow: none;
 }
 nav i {
     font-size: smaller;
@@ -54,9 +55,14 @@ nav i {
     text-align: center;
     margin-left: 0.5rem;
     color: #EC1C24;
+    text-shadow: 0.1rem 0.1rem 0.3rem #1421DA;
 }
 nav li {
     list-style-type: none;
+}
+nav li:first-of-type {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
 }
 nav li ul {
     visibility: hidden;
@@ -68,8 +74,7 @@ nav li:hover {
 #burger {
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
-}
-#burger>i {
+    text-shadow: -0.3rem 0.3rem 0.4rem #EC1424;
     font-size: 3rem;
     color: #1421DA;
 }
@@ -78,6 +83,7 @@ nav *:hover span {
     color: #EC1C24;
     visibility: visible;
     display: inline;
+    text-shadow: 0.1rem 0.1rem 0.3rem #1421DA;
 }
 nav *:focus-within span {
     color: #EC1C24;
@@ -93,7 +99,7 @@ nav *:focus-within span {
     border-radius: 0.8rem;
     z-index: -1;
     background-color: #FF7F27;
-    box-shadow: 0.3rem 0.3rem 0.3rem #1421DA;
+    box-shadow: 0.1rem 0.1rem 0.3rem #EC1424, 0.3rem 0.3rem 0.5rem #1421DA, -0.1rem -0.1rem 0.3rem #EC1424;
 }
 /* nav menu hover settings */
 nav li:hover, nav li:hover>ul, nav li ul:hover, nav li:hover ul li {
@@ -164,8 +170,8 @@ nav li:focus-within li .sub-menu {
     width: 26.8rem;
     left: 5rem;
     border-radius: 0.8rem;
-    border-top-left-radius: 0.3rem;
-    box-shadow: 0.3rem 0.3rem 0.3rem #EC1C24;
+    border-top-left-radius: 0.8rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem, 0.3rem 0.3rem 0.3rem #EC1C24, -0.1rem -0.1rem 0.3rem;
 }
 .page.cv ul div li {
     background-color: #13D705;
@@ -177,7 +183,7 @@ nav li:focus-within li .sub-menu {
 .sub-menu:first-child {
     padding-top: 0.5rem;
     border-top-right-radius: 0.8rem;
-    border-top-left-radius: 0.3rem;
+    border-top-left-radius: 0.8rem;
 }
 .sub-menu:nth-child(2) {
     border-bottom-left-radius: 0.8rem;
