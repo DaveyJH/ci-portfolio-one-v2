@@ -349,14 +349,23 @@ h2 {
     flex-grow: 1;
 }
 .scroll i {
-    padding: 0 4.5rem;
     color: #2E0066;
     font-size: 3rem;
-    border-radius: 0.6rem;
     line-height: 2.7rem;
-    border: 0.2rem ridge #2E0066;
+    margin-left: auto;
+    margin-right: auto;
 }
-.scroll i:hover {
+.scroll button {
+    position: relative;
+    z-index: 1;
+    margin: 0 3rem;
+    width: 7.5rem;
+    height: 3rem;
+    border-radius: 0.6rem;
+    border: 0.2rem ridge #2E0066;
+    background-color: #FFF53F;
+}
+.scroll button:hover {
     background-color: #13D705;
 }
 
