@@ -220,6 +220,7 @@ h2 {
     grid-area: tag-lines;
     letter-spacing: 0.02rem;
     animation: tag-line-appear 3.5s 1.4s both;
+    font-size: 1.7rem;
 }
 .tag-line.right {
     text-align: right;
@@ -238,8 +239,10 @@ h2 {
 /* rubiks image */
 .rubiks {
     grid-area: rubiks-cube;
+    background-color: #0ED145;
     background: url(../images/rubiks-color-1.png) no-repeat center center;
     background-size: contain;
+    border-radius: 0.8rem;
     position: relative;
     animation: grow-to-normal 0.6s ease-out both;
 }
@@ -409,12 +412,35 @@ h2 {
 #cv .flat {
     left: 0.5rem;
     bottom: -10.5rem;
+    animation: flat-grow 2s 2.7s ease-out both;
 }
 #cv .angle {
     bottom: -5.5rem;
     left: -1rem;
     height: 2.1rem;
     width: 2.1rem;
+    animation: cv-angle-grow 0.5s 2.1s linear both;
+
+}
+@keyframes flat-grow {
+    from {
+        width: 0rem;
+    }
+    to {
+        width:10rem;
+    }
+}
+@keyframes cv-angle-grow {
+    from {
+        height: 0rem;
+        width: 0rem;
+        bottom: -3.5rem;
+    }
+    to {
+        height: 2.1rem;
+        width: 2.1rem;
+        bottom: -5.5rem;
+    }
 }
 
 /* scroll-prompt */
