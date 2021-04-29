@@ -5,10 +5,12 @@
     border: none;
 }
 /* 
+!check this
+*/
 *:focus {
     outline: none;
 } 
-*/
+
 /* allow thick red focus border for accessibility, only visible when tabbing by keyboard. do i need to conider other accessibility methods? */
 *:focus:focus-visible {
     outline: #EC1C24 outset 0.3rem;
