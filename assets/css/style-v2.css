@@ -32,7 +32,8 @@ button:hover {
 nav{
     position: fixed;
     z-index: 1;
-    top: 2.5rem;
+    /* top: 2.5rem; */
+    top: calc(5vh - 0.8rem);
     left: 2rem;
     font-size: 3rem;
     font-weight: 600;
@@ -202,8 +203,11 @@ nav li:focus-within li .sub-menu {
     position: relative;
     padding-bottom: 0.1rem;
     display: grid;
-    grid-template-rows: 8.8rem 7rem 6.1rem 38rem 4rem;
+    /* grid-template-rows: 8.8rem 7rem 6.1rem 38rem 4rem; */
+    grid-template-rows: 13.75vh 10.9375vh 9.53125vh 59.375vh 6.25vh;
     grid-template-areas: "title" "h2" "tag-lines" "rubiks-cube" "scroll";
+    min-width: 35.8rem;
+    min-height: 100vw;
 }
 h1, h2 {
     text-align: center;
@@ -216,7 +220,8 @@ h1 {
     font-size: 4.5rem;
     text-shadow: 0.2rem 0.2rem 0.4rem #2E0066 ;
     margin-left: 3rem;
-    margin-top: 1.7rem;
+    /* margin-top: 1.7rem; */
+    margin-top: calc(5vh - 1.5rem);
     grid-area: title;
 }
 h2 {
@@ -263,6 +268,7 @@ h2 {
     animation: grow-to-normal 0.6s ease-out both;
     margin-left: auto;
     margin-right: auto;
+    top: calc(20vh - 12.8rem);
 }
 .holo-effect * {
     position: absolute;
@@ -492,12 +498,32 @@ h2 {
 .scroll button:hover {
     background-color: #13D705;
 }
-
+/* screens below 640*320 */
+@media screen and (max-height: 639.9px) and (orientation: portrait) {
+    html {
+        font-size: 55.5%;
+    }
+    #cv .flat {
+        bottom: -6.15em;
+    }
+}
+@media screen and (max-height: 320px) and (orientation: landscape) {
+    html {
+        font-size: 55.5%;
+    }
+    #cv .flat {
+        bottom: -6.15em;
+    }
+}
 /* landscape small screens */
 @media screen and (orientation: landscape) {
+    nav {
+        top: calc(5vh + 2.5rem);
+    }
     #home-page {
-        grid-template-rows: 8.9rem 5.9rem 6.8rem 6.8rem 3.5rem;
-        grid-template-columns: 34rem 30rem;
+        /* grid-template-rows: 8.9rem 5.9rem 6.8rem 6.8rem 3.5rem; */
+        grid-template-rows: 24.722222vh 16.388888vh 18.888888vh 18.888888vh 9.722222vh;
+        grid-template-columns: 53.125vw 46.875vw;
         grid-template-areas: "title rubiks-cube" "h2 rubiks-cube" "tag-left rubiks-cube" "tag-right rubiks-cube" "scroll scroll";
         padding-top: 1em;
         padding-bottom: 1.55em;
@@ -508,6 +534,7 @@ h2 {
         width: 32rem;
         height: 30rem;
         left: -2rem;
+        top: calc(75vh - 27rem);
     }
     .holo-effect, .holo-effect * {
         animation: none;
