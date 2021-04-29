@@ -75,7 +75,7 @@ nav li:hover {
     border-top-right-radius: 0.8rem;
     font-size: 3rem;
     color: #1421DA;
-    animation: burger-shadow 0.9s 2.5s ease both;
+    animation: burger-shadow 0.9s 6s ease both;
 }
 @keyframes burger-shadow {
     from {
@@ -235,14 +235,17 @@ h2 {
     text-align: right;
     position: relative;
     top: 2rem;
+    animation-name: tag-line-appear;
     animation-delay: 1.9s;
 }
 @keyframes tag-line-appear {
     from {
         color: #FFF53F;
+        text-decoration: underline 0.6rem #FFF53F;
     }
     to {
         color: #5100B5;
+        text-decoration: underline 0.6rem #42BFDD22;
     }
 }
 /* rubiks image */
@@ -544,7 +547,15 @@ h2 {
         z-index: -1;
         animation: cube-shadow-grow 1.2s 1.3s ease-out both;
     }
-
+    /* remove holo-effect shadow from text */
+    @keyframes tag-line-appear {
+        from {
+            color: #FFF53F;
+        }
+        to {
+            color: #5100B5;
+        }
+    }
     @keyframes cube-shadow-grow {
         from {
             transform: scale(0);
