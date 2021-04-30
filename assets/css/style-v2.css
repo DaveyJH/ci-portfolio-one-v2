@@ -207,7 +207,7 @@ nav li:focus-within li .sub-menu {
     grid-template-rows: 13.75vh 10.9375vh 9.53125vh 59.375vh 6.25vh;
     grid-template-areas: "title" "h2" "tag-lines" "rubiks-cube" "scroll";
     min-width: 35.8rem;
-    min-height: 100vw;
+    min-height: 100vh;
 }
 h1, h2 {
     text-align: center;
@@ -498,6 +498,7 @@ h2 {
 .scroll button:hover {
     background-color: #13D705;
 }
+/* landscape */
 /* screens below 640*320 */
 @media screen and (max-height: 639.9px) and (orientation: portrait) {
     html {
@@ -507,6 +508,7 @@ h2 {
         bottom: -6.15em;
     }
 }
+
 @media screen and (max-height: 320px) and (orientation: landscape) {
     html {
         font-size: 55.5%;
@@ -515,7 +517,6 @@ h2 {
         bottom: -6.15em;
     }
 }
-/* landscape small screens */
 @media screen and (orientation: landscape) {
     nav {
         top: calc(5vh + 2.5rem);
@@ -526,7 +527,8 @@ h2 {
         grid-template-columns: 53.125vw 46.875vw;
         grid-template-areas: "title rubiks-cube" "h2 rubiks-cube" "tag-left rubiks-cube" "tag-right rubiks-cube" "scroll scroll";
         padding-top: 1em;
-        padding-bottom: 1.55em;
+        min-width: 100vw;
+        min-height: calc(100vh - 1em);
     }
     /* rubiks cube */
     .rubiks {
@@ -534,7 +536,7 @@ h2 {
         width: 32rem;
         height: 30rem;
         left: -2rem;
-        top: calc(75vh - 27rem);
+        top: calc(50vh - 18rem);
     }
     .holo-effect, .holo-effect * {
         animation: none;
