@@ -699,7 +699,7 @@ h2 {
 /*dark mode testing -
  research suggests "prefers-color-scheme" is deprecated.  this may be possible with a work around (div contaning all, first child as a small radio button or similar, then use a pseudo class to set all sibling children color changes)but probably just a nice feature to have if it works for now.  Research suggests using javascript to do this more efficiently so will revisit at a later date
 */
-/* @media (prefers-color-scheme: dark) {
+ @media (prefers-color-scheme: dark) {
     #home-page {
         background-color: #323031;
     }
@@ -807,7 +807,7 @@ h2 {
         text-shadow: #000000 0.2rem 0.2rem;
         background-color: #394f49CC;
     }
-} */
+} 
 
 
 /* landscape settings test */
