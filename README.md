@@ -1,5 +1,9 @@
 # Dave J Horrocks - A Personal Profile
 
+**Incomplete project - not continuing at this stage**
+
+*note index and index-v2 have quite different styles*
+
 ## Table of Contents
 - [Objective](#Objective)
 - Developer Section
